@@ -34,6 +34,8 @@ Abby	Morrow
 
 Trish	Perkins
 
+Justin Gilmore
+
 Sheila	Powell
 
 Sandra	Prieto
@@ -73,6 +75,7 @@ Often, it takes multiple Sprints to contribute an idea back into the Community. 
 * What is your project's Roadmap?
 
 ### Project Documentation
+
 Jamboard - https://jamboard.google.com/d/1T0g_fahg2ES7MhyFRHArDstwbVtzvuu6ziW2IG0XnDM/edit?usp=sharing
 
 Google Doc - https://docs.google.com/document/d/1osMFz2RIHEzABUDrk8wVOor2JmxjmYHudgAobXJZe-8/edit?usp=sharing
