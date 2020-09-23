@@ -15,17 +15,29 @@ Help us give you the thanks you deserve and ensure future contributors know who 
 * Team Leader(s): Deanne Walters & Sandra Prieto
 * GitHub Scribe(s): Sandra Prieto 
 * List of all Contributors:
+
 Shawn	Bass
+
 Deepa	Bedi
+
 Jonathan Foerster
+
 Meg	Gray
+
 Josh Jensen
+
 Nandini	Karamala
+
 Maria	Lawler
+
 Abby	Morrow
+
 Trish	Perkins
+
 Sheila	Powell
+
 Sandra	Prieto
+
 Deanne	Walters
 
 
