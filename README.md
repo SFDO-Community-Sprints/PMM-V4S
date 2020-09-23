@@ -73,6 +73,7 @@ Often, it takes multiple Sprints to contribute an idea back into the Community. 
 * What is your project's Roadmap?
 
 ### Project Documentation
-Where can you project documentation be found? i.e. Wiki? Google drive?
+Jamboard - https://jamboard.google.com/d/1T0g_fahg2ES7MhyFRHArDstwbVtzvuu6ziW2IG0XnDM/edit?usp=sharing
+Google Doc - https://docs.google.com/document/d/1osMFz2RIHEzABUDrk8wVOor2JmxjmYHudgAobXJZe-8/edit?usp=sharing
 
 **Important**: If you have specific asks to help move this project forward we would recommend that you list them here, but also create separate Issues for each and add the label of "help wanted". This is a well-worn best practice for projects living in GitHub.
