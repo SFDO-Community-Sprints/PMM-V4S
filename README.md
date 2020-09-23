@@ -12,8 +12,8 @@ We encourage you to bring this project conversation to the Power of us Hub! Plea
 
 ### Current Project Team
 Help us give you the thanks you deserve and ensure future contributors know who to contact if they have questions! Please ensure that all contributing members of the team are included.
-* Team Leader(s): 
-* GitHub Scribe(s): 
+* Team Leader(s): Deanne Walters & Sandra Prieto
+* GitHub Scribe(s): Sandra Prieto 
 * List of all Contributors:
 
 ### Past Project Team Members
