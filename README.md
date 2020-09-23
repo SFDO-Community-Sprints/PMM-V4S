@@ -8,7 +8,8 @@ How would you categorize your project? For example, are you creating an app and/
 How would you define the audience for your project? For example, nonprofits, education, or everyone. [Learn how](https://github.com/SFDO-Community-Sprints/Welcome/wiki/SFDO-Community-Sprints-Topic-Overview) this information loops back into Sprint project work!
 
 ### Hub Group Link
-We encourage you to bring this project conversation to the Power of us Hub! Please include a link to your Hub group here so others can find you and continue the conversation later.
+
+https://powerofus.force.com/s/group/0F91E000000LmUJSA0
 
 ### Current Project Team
 Help us give you the thanks you deserve and ensure future contributors know who to contact if they have questions! Please ensure that all contributing members of the team are included.
