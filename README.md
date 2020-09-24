@@ -66,6 +66,8 @@ September Virtual Sprint 2020: Draft documentation started detailing various use
 
 Possible items to explore include the various connections after new PMM Winter release in addition to how to migrate data from V4S to PMM. Looking at creating a recipe doc similar to (https://powerofus.force.com/s/article/NPSP-Custom-Rllps-Recipes).
 
+With the PMM winter release we are looking at connecting Service Sessions object with a V4S object.
+
 
 ### Project Documentation
 
