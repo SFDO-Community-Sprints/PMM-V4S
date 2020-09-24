@@ -61,6 +61,8 @@ Data entry is minimized (eg don’t need to enter everything twice once in PMM, 
 
 ### Project Team Accomplishments
 
+September Virtual Sprint 2020: Draft documentation started detailing various use cases ideas. When to use PMM vs V4S, PMM only solutions, and possible hybrid model solution. Comparison chart for PMM and V4S (starting on page 4)
+
 
 ### Future Contributions (AKA what were you unable to finish at the Sprint)
 This is only the beginning! The hope is that items listed here can make it into a customizable roll-up (e.g. https://powerofus.force.com/s/article/NPSP-Custom-Rllps-Recipes)
