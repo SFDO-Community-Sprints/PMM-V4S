@@ -64,7 +64,7 @@ September Virtual Sprint 2020: Draft documentation started detailing various use
 
 ### Future Contributions (AKA what were you unable to finish at the Sprint)
 
-This is only the beginning! The items listed here can be used to create a customizable roll-up (e.g. https://powerofus.force.com/s/article/NPSP-Custom-Rllps-Recipes) Possible items to explore include the various connections after new PMM Winter release in addition to how to migrate data from V4S to PMM.
+Possible items to explore include the various connections after new PMM Winter release in addition to how to migrate data from V4S to PMM. Looking at creating a recipe doc similar to (https://powerofus.force.com/s/article/NPSP-Custom-Rllps-Recipes).
 
 
 ### Project Documentation
