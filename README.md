@@ -6,7 +6,7 @@ The goal of this project is to create documentation defining use cases that appl
 
 ### Project Vertical
 
-This project is intended for non-profit admins in organizations currently using or looking for ways to connect PMM & V4S.
+This project is intended for admins in non-profit organizations currently using or looking for ways to connect PMM & V4S.
 
 ### Hub Group Link
 
