@@ -57,8 +57,7 @@ Currently organizations using PMM & V4S have data data living in both products. 
 Data entry is minimized (eg don’t need to enter everything twice once in PMM, once in V4S) 
 
 ### Project Resources (It's ok if you'd prefer to type all the things in Google docs, Quip, or your word processor of choice, just please make sure you include links to your work here in Github. We need a source of truth, and for now that's here in GitHub.)
-* Indicate if there are any existing Hub Ideas, or product Issues/Bugs that you're solving for. 
-* Where can we find additional information on your project? Ie. do you have supporting code in another Repo, do you have documentation in Google, your repo's Wiki, etc.? Be sure to include (or at least links to) all supporting material here. If it's not in your project Repo, it will get lost.
+
 
 ### Project Team Accomplishments
 What did the Project Team get done during the Sprint?
