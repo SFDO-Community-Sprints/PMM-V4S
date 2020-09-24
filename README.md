@@ -2,7 +2,7 @@
 A Community Sprint project group to draft a recipe doc to connect Program Management Module (PMM) and Volunteers for Salesforce (V4S) open source products!
 
 ### Project Theme
-Creating documentation defining use cases that apply to PMM vs. V4S and hybrid option. Documentation includes chart and screenshots of Flow Builder  process connecting PMM & V4S.
+The goal of this project is to create documentation defining use cases that apply to PMM vs. V4S and hybrid option. Documentation includes chart and screenshots of Flow Builder  process connecting PMM & V4S.
 
 ### Project Vertical
 
