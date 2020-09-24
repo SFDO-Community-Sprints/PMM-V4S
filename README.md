@@ -52,14 +52,8 @@ ENTER NAME HERE    | ENTER TEAM ROLE HERE  | ENTER GITHUB USERNAME HERE   | ENTE
 
 ### Project Vision (Please make this your first task as a team)
 
-Let people know what the value and intended benefits of your project are. The most successful projects will have an extremely clear and well-articulated vision. Answer these questions before you start talking about solutions:
-* What is the big problem that your project is trying to solve?
-* Who will be using your project?
-* A year from now, how do you see people describing your project?
-
-Use these questions to form a clear vision statement of 3-5 sentences (rough guideline). 
-
-Having trouble? Salesforce.org staff and your fellow sprinters are here to help! Use one of your table's request signs and/or post in the Quip Chat to seek help, and we'll pop by.
+Currently organizations using PMM & V4S have data data living in both products. This solution is aimed at cleanly syncing the data across the two product. 
+Data entry is minimized (eg don’t need to enter everything twice once in PMM, once in V4S) 
 
 ### Project Resources (It's ok if you'd prefer to type all the things in Google docs, Quip, or your word processor of choice, just please make sure you include links to your work here in Github. We need a source of truth, and for now that's here in GitHub.)
 * Indicate if there are any existing Hub Ideas, or product Issues/Bugs that you're solving for. 
