@@ -60,7 +60,7 @@ Data entry is minimized (eg don’t need to enter everything twice once in PMM, 
 
 
 ### Project Team Accomplishments
-What did the Project Team get done during the Sprint?
+
 
 ### Future Contributions (AKA what were you unable to finish at the Sprint)
 This is only the beginning! The hope is that items listed here can make it into a customizable roll-up (e.g. https://powerofus.force.com/s/article/NPSP-Custom-Rllps-Recipes)
