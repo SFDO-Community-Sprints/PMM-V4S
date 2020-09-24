@@ -6,7 +6,7 @@ Creating documentation defining use cases that apply to PMM vs. V4S and hybrid o
 
 ### Project Vertical
 
-The audience for this project are non-profit admins in organizations looking for ways to connect PMM & V4S.
+This project is intended for non-profit admins in organizations currently using or looking for ways to connect PMM & V4S.
 
 ### Hub Group Link
 
