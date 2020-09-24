@@ -63,11 +63,7 @@ Data entry is minimized (eg don’t need to enter everything twice once in PMM, 
 What did the Project Team get done during the Sprint?
 
 ### Future Contributions (AKA what were you unable to finish at the Sprint)
-Often, it takes multiple Sprints to contribute an idea back into the Community. What happens at a Sprint does not stay at a Sprint! If someone were to contribute to this project at the next Sprint what would you want them to work on to move this project forward?<br>
-
-* What types of team roles does this project require? This gives you a way to tell future volunteers what kinds of tasks you need help with to complete this project. For example: Do you need a developer, documentation writer, qa tester, thought-leader, general volunteers, etc.
-
-* What is your project's Roadmap?
+This is only the beginning! The hope is that items listed here can make it into a customizable roll-up (e.g. https://powerofus.force.com/s/article/NPSP-Custom-Rllps-Recipes)
 
 ### Project Documentation
 
