@@ -56,12 +56,10 @@ ENTER NAME HERE    | ENTER TEAM ROLE HERE  | ENTER GITHUB USERNAME HERE   | ENTE
 Currently organizations using PMM & V4S have data data living in both products. This solution is aimed at cleanly syncing the data across the two product. 
 Data entry is minimized (eg don’t need to enter everything twice once in PMM, once in V4S) 
 
-### Project Resources (It's ok if you'd prefer to type all the things in Google docs, Quip, or your word processor of choice, just please make sure you include links to your work here in Github. We need a source of truth, and for now that's here in GitHub.)
-
 
 ### Project Team Accomplishments
 
-September Virtual Sprint 2020: Draft documentation started detailing various use cases ideas. When to use PMM vs V4S, PMM only solutions, and possible hybrid model solution. Comparison chart for PMM and V4S (starting on page 4)
+September Virtual Sprint 2020: Draft documentation started detailing various use case ideas. When to use PMM vs V4S, PMM only solutions, and possible hybrid model solution. Comparison chart for PMM and V4S (starting on page 4)
 
 
 ### Future Contributions (AKA what were you unable to finish at the Sprint)
