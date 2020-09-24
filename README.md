@@ -5,7 +5,8 @@ A Community Sprint project group to draft a recipe doc to connect Program Manage
 Creating documentation defining use cases that apply to PMM vs. V4S and hybrid option. Documentation includes chart and screenshots of Flow Builder  process connecting PMM & V4S.
 
 ### Project Vertical
-How would you define the audience for your project? For example, nonprofits, education, or everyone. [Learn how](https://github.com/SFDO-Community-Sprints/Welcome/wiki/SFDO-Community-Sprints-Topic-Overview) this information loops back into Sprint project work!
+
+theme-technical-documentation
 
 ### Hub Group Link
 
