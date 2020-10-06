@@ -75,5 +75,7 @@ Jamboard - https://jamboard.google.com/d/1T0g_fahg2ES7MhyFRHArDstwbVtzvuu6ziW2IG
 
 Google Doc - https://docs.google.com/document/d/1osMFz2RIHEzABUDrk8wVOor2JmxjmYHudgAobXJZe-8/edit?usp=sharing
 
+Flow for Hybrid Volunteer Hours - https://drive.google.com/file/d/1HkG1JDPxbHj2PJ8hmgad_vNAFfRxRdIl/view?usp=sharing
+
 **Important**: If you have specific asks to help move this project forward we would recommend that you list them here, but also create separate Issues for each and add the label of "help wanted". This is a well-worn best practice for projects living in GitHub.
  
