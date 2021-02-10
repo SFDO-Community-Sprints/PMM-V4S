@@ -49,7 +49,19 @@ Deanne	Walters
 
 Full Name          | Team Role             | Github Username              | Sprint(s)
 ------------       | -------------         | -------------                | -------------
-ENTER NAME HERE    | ENTER TEAM ROLE HERE  | ENTER GITHUB USERNAME HERE   | ENTER LOCATION+YEAR HERE
+Shawn	Bass         |                       |                              | 
+Deepa	Bedi         |                       |                              | 
+Jonathan Foerster  |                       |                              | 
+Meg	Gray           |                       |                              | 
+Josh Jensen        |                       |                              | 
+Nandini	Karamala   |                       |                              | 
+Maria	Lawler       |                       |                              | 
+Abby	Morrow        |                       |                              | 
+Trish	Perkins      |                       |                              | 
+Justin Gilmore     |                       |                              | 
+Sheila	Powell      |                       |                              | 
+Sandra	Prieto      |                       |                              | 
+Deanne	Walters     |                       |                              | 
 
 ### Project Vision (Please make this your first task as a team)
 
