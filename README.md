@@ -23,19 +23,19 @@ Help us give you the thanks you deserve and ensure future contributors know who 
 
 Full Name          | Team Role             | Github Username              | Sprint(s)
 ------------       | -------------         | -------------                | -------------
-Shawn	Bass         |                       |                              | 
-Deepa	Bedi         |                       |                              | 
-Jonathan Foerster  |                       |                              | 
-Meg	Gray           |                       |                              | 
-Josh Jensen        |                       |                              | 
-Nandini	Karamala   |                       |                              | 
-Maria	Lawler       |                       |                              | 
-Abby	Morrow        |                       |                              | 
-Trish	Perkins      |                       |                              | 
-Justin Gilmore     |                       |                              | 
-Sheila	Powell      |                       |                              | 
-Sandra	Prieto      |                       |                              | 
-Deanne	Walters     |                       |                              | 
+Shawn	Bass         |                       |                              | September, 2020
+Deepa	Bedi         |                       |                              | September, 2020
+Jonathan Foerster  |                       |                              | September, 2020
+Meg	Gray           |                       |                              | September, 2020
+Josh Jensen        |                       |                              | September, 2020
+Nandini	Karamala   |                       |                              | September, 2020
+Maria	Lawler       |                       |                              | September, 2020
+Abby	Morrow        |                       |                              | September, 2020
+Trish	Perkins      |                       |                              | September, 2020
+Justin Gilmore     |                       |                              | September, 2020
+Sheila	Powell      |                       |                              | September, 2020
+Sandra	Prieto      |                       |                              | September, 2020
+Deanne	Walters     |                       |                              | September, 2020
 
 ### Project Vision (Please make this your first task as a team)
 
