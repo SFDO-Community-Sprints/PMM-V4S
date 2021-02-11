@@ -80,8 +80,6 @@ With the PMM winter release we are looking at connecting Service Sessions object
 
 ### Project Documentation
 
-See the Wiki
-
 Jamboard - https://jamboard.google.com/d/1T0g_fahg2ES7MhyFRHArDstwbVtzvuu6ziW2IG0XnDM/edit?usp=sharing
 
 Google Doc - https://docs.google.com/document/d/1osMFz2RIHEzABUDrk8wVOor2JmxjmYHudgAobXJZe-8/edit?usp=sharing
