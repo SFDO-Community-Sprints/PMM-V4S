@@ -55,7 +55,7 @@ Sheila	Powell      |                       |                              | Virt
 Sandra	Prieto      |                       |                              | Virtual- September, 2020
 Deanne	Walters     |                       |                              | Virtual- September, 2020
 
-### Project Vision (Please make this your first task as a team)
+### Project Vision 
 
 Currently organizations using PMM & V4S have data data living in both products. This solution is aimed at cleanly syncing the data across the two product. 
 Data entry is minimized (eg don’t need to enter everything twice once in PMM, once in V4S) 
@@ -63,7 +63,7 @@ Data entry is minimized (eg don’t need to enter everything twice once in PMM, 
 
 ### Project Team Accomplishments
 
-September Virtual Sprint 2020: Draft documentation started detailing various use case ideas. When to use PMM vs V4S, PMM only solutions, and possible hybrid model solution. Comparison chart for PMM and V4S (starting on page 4)
+*September Virtual Sprint 2020*: Draft documentation started detailing various use case ideas. When to use PMM vs V4S, PMM only solutions, and possible hybrid model solution. Comparison chart for PMM and V4S (starting on page 4)
 
 
 ### Future Contributions (AKA what were you unable to finish at the Sprint)
