@@ -62,8 +62,9 @@ Data entry is minimized (eg don’t need to enter everything twice once in PMM, 
 
 
 ### Project Team Accomplishments
+
 **February Virtual Sprint 2021**:
-The team created an infographic to highlight when to use PMM vs. V4S. Update previous documentation to include additional information options with the latest release. The group explored various users' stories and created a flow that could assist with a possible connection. 
+The team created an infographic to highlight when to use PMM vs. V4S. Update previous documentation to include additional information options with the latest release. The group explored various users' stories and created a flow that could assist with a possible connection.
 
 **September Virtual Sprint 2020**: 
 Draft documentation started detailing various use case ideas. When to use PMM vs V4S, PMM only solutions, and possible hybrid model solution. Comparison chart for PMM and V4S (starting on page 4)
