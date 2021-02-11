@@ -63,20 +63,24 @@ Data entry is minimized (eg don’t need to enter everything twice once in PMM, 
 
 ### Project Team Accomplishments
 **February Virtual Sprint 2021**:
-The team created an infographic to highlight when to use PMM vs. V4S. Update previous documentation to include additional information options with the latest release. The group explored various users' stories and created a flow that could assist with a possible connection.
+The team created an infographic to highlight when to use PMM vs. V4S. Update previous documentation to include additional information options with the latest release. The group explored various users' stories and created a flow that could assist with a possible connection. 
 
 **September Virtual Sprint 2020**: 
 Draft documentation started detailing various use case ideas. When to use PMM vs V4S, PMM only solutions, and possible hybrid model solution. Comparison chart for PMM and V4S (starting on page 4)
 
 
 ### Future Contributions (AKA what were you unable to finish at the Sprint)
+**February Virtual Sprint 2021**:
+Further explorer other uses cases and possible connections and explore ways to use current info to finalize a recipe doc.
 
-Possible items to explore include the various connections after new PMM Winter release in addition to how to migrate data from V4S to PMM. Looking at creating a recipe doc similar to (https://powerofus.force.com/s/article/NPSP-Custom-Rllps-Recipes).
+**September Virtual Sprint 2020**:Possible items to explore include the various connections after new PMM Winter release in addition to how to migrate data from V4S to PMM. Looking at creating a recipe doc similar to (https://powerofus.force.com/s/article/NPSP-Custom-Rllps-Recipes).
 
 With the PMM winter release we are looking at connecting Service Sessions object with a V4S object.
 
 
 ### Project Documentation
+
+See the Wiki
 
 Jamboard - https://jamboard.google.com/d/1T0g_fahg2ES7MhyFRHArDstwbVtzvuu6ziW2IG0XnDM/edit?usp=sharing
 
