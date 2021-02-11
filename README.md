@@ -18,24 +18,36 @@ Help us give you the thanks you deserve and ensure future contributors know who 
 * GitHub Scribe(s): Sandra Prieto 
 * List of all Contributors:
 
+Full Name          | Team Role             | Github Username              | Sprint(s)
+------------       | -------------         | -------------                | -------------
+Andy Green         |                       |                              | Virtual- February, 2021
+Deepa	Bedi         |                       |                              | Virtual- February, 2021
+Anne Wiegersman    |                       |                              | Virtual- February, 2021
+Clair Lam          |                       |                              | Virtual- February, 2021
+Kelley Bevans      |                       |                              | Virtual- February, 2021
+Polly Kornblith    |                       |                              | Virtual- February, 2021
+Skye Tyler         |                       |                              | Virtual- February, 2021
+                   |                       |                              | Virtual- February, 2021
+Sandra	Prieto      |                       |                              | Virtual- February, 2021
+Deanne	Walters     |                       |                              | Virtual- February, 2021
 
 ### Past Project Team Members
 
 Full Name          | Team Role             | Github Username              | Sprint(s)
 ------------       | -------------         | -------------                | -------------
-Shawn	Bass         |                       |                              | September, 2020
-Deepa	Bedi         |                       |                              | September, 2020
-Jonathan Foerster  |                       |                              | September, 2020
-Meg	Gray           |                       |                              | September, 2020
-Josh Jensen        |                       |                              | September, 2020
-Nandini	Karamala   |                       |                              | September, 2020
-Maria	Lawler       |                       |                              | September, 2020
-Abby	Morrow        |                       |                              | September, 2020
-Trish	Perkins      |                       |                              | September, 2020
-Justin Gilmore     |                       |                              | September, 2020
-Sheila	Powell      |                       |                              | September, 2020
-Sandra	Prieto      |                       |                              | September, 2020
-Deanne	Walters     |                       |                              | September, 2020
+Shawn	Bass         |                       |                              | Virtual- September, 2020
+Deepa	Bedi         |                       |                              | Virtual- September, 2020
+Jonathan Foerster  |                       |                              | Virtual- September, 2020
+Meg	Gray           |                       |                              | Virtual- September, 2020
+Josh Jensen        |                       |                              | Virtual- September, 2020
+Nandini	Karamala   |                       |                              | Virtual- September, 2020
+Maria	Lawler       |                       |                              | Virtual- September, 2020
+Abby	Morrow        |                       |                              | Virtual- September, 2020
+Trish	Perkins      |                       |                              | Virtual- September, 2020
+Justin Gilmore     |                       |                              | Virtual- September, 2020
+Sheila	Powell      |                       |                              | Virtual- September, 2020
+Sandra	Prieto      |                       |                              | Virtual- September, 2020
+Deanne	Walters     |                       |                              | Virtual- September, 2020
 
 ### Project Vision (Please make this your first task as a team)
 
