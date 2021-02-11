@@ -27,9 +27,9 @@ Clair Lam          |                       |                              | Virt
 Kelley Bevans      |                       |                              | Virtual- February, 2021
 Polly Kornblith    |                       |                              | Virtual- February, 2021
 Skye Tyler         |                       |                              | Virtual- February, 2021
-                   |                       |                              | Virtual- February, 2021
-Sandra	Prieto      |                       |                              | Virtual- February, 2021
-Deanne	Walters     |                       |                              | Virtual- February, 2021
+Sandra	Prieto     |                       |                              | Virtual- February, 2021
+Deanne	Walters    |                       |                              | Virtual- February, 2021
+
 
 ### Past Project Team Members
 
