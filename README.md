@@ -89,6 +89,8 @@ Flow for Hybrid Volunteer Hours - https://drive.google.com/file/d/1HkG1JDPxbHj2P
 
 PMM + V4S: 1 Client to Many Volunteer User Story Google Doc: https://docs.google.com/document/d/11rkmEFzYw1YFm-gZgWH-La11FxQ4sM1Ru8G_Mya1KG8/edit?usp=sharing
 
+PMM + V4S: Flow with junction object for Many to Many relationship: https://docs.google.com/document/d/1c5G0P1isjvAwNd7PWoZ997b3OgLK1XzeAppNjjk5H6c/edit
+
 PMM v. V4S Infographic : https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:d0a8dec8-485f-4b0e-ae41-7e12239abf04
 
 **Important**: If you have specific asks to help move this project forward we would recommend that you list them here, but also create separate Issues for each and add the label of "help wanted". This is a well-worn best practice for projects living in GitHub.
