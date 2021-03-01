@@ -5,7 +5,8 @@ project:
         name: PMM-V4S
         api_version: '50.0'
     dependencies:
-        - github: 'https://github.com/SalesforceFoundation/NPSP'
+        - github: 'https://github.com/SalesforceFoundation/PMM'
+        - github: 'https://github.com/SalesforceFoundation/Volunteers-for-Salesforce'
     git:
         default_branch: 'master'
     source_format: sfdx
