@@ -501,7 +501,7 @@
             <targetReference>What_object_is_this_starting_from</targetReference>
         </connector>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <variables>
         <name>FinalSelectedParticipants</name>
         <dataType>SObject</dataType>
