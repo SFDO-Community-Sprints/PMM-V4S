@@ -7,7 +7,7 @@ project:
     dependencies:
         - github: 'https://github.com/SalesforceFoundation/NPSP'
     git:
-        default_branch: 'main'
+        default_branch: 'master'
     source_format: sfdx
 
 tasks:
