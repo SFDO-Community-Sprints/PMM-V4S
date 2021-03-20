@@ -10,7 +10,7 @@ https://powerofus.force.com/s/group/0F91E000000LmUJSA0
 Help us give you the thanks you deserve and ensure future contributors know who to contact if they have questions! Please ensure that all contributing members of the team are included.
 * Team Leader(s): Deanne Walters & Sandra Prieto
 * GitHub Scribe(s): Sandra Prieto 
-* List of all Contributors:
+List of all Contributors:
 Full Name          | Team Role             | Github Username              | Sprint(s)
 ------------       | -------------         | -------------                | -------------
 Andy Green         |                       |                              | Virtual- February, 2021
