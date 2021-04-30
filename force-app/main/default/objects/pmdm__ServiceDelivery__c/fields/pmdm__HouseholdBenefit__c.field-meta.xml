@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pmdm__HouseholdBenefit__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>NOT(ISBLANK(pmdm__Account__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Household Benefit</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

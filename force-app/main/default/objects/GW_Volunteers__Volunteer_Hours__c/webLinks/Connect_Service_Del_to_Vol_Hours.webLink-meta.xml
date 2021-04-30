@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Connect_Service_Del_to_Vol_Hours</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Connect Service Del. to Vol. Hours</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/flow/Create_Connection_Records?ObjectName=Volunteer Hours&amp;VolunteerJobsID={!GW_Volunteers__Volunteer_Hours__c.GW_Volunteers__Volunteer_JobId__c}&amp;varSelectedVolunteer={!GW_Volunteers__Volunteer_Hours__c.Id}&amp;DateAssignment={!GW_Volunteers__Volunteer_Hours__c.GW_Volunteers__Start_Date__c}&amp;retURL={!GW_Volunteers__Volunteer_Hours__c.Id}</url>
+</WebLink>

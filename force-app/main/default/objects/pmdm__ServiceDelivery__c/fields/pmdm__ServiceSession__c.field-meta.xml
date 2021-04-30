@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Connection__c</fullName>
+    <fullName>pmdm__ServiceSession__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
     <externalId>false</externalId>
-    <label>Connection</label>
-    <referenceTo>Connection__c</referenceTo>
+    <label>Service Session</label>
+    <referenceTo>pmdm__ServiceSession__c</referenceTo>
     <relationshipLabel>Service Deliveries</relationshipLabel>
-    <relationshipName>Service_Deliveries</relationshipName>
+    <relationshipName>ServiceDeliveries</relationshipName>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Lookup</type>

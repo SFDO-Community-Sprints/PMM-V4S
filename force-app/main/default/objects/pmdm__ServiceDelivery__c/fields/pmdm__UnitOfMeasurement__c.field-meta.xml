@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pmdm__UnitOfMeasurement__c</fullName>
+    <deprecated>false</deprecated>
+    <description>A formula field that displays the UnitOfMeasurement__c field from the Service object.</description>
+    <externalId>false</externalId>
+    <formula>pmdm__Service__r.pmdm__UnitOfMeasurement__c</formula>
+    <inlineHelpText>The Unit of Measurement from the related Service.</inlineHelpText>
+    <label>Unit of Measurement</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
