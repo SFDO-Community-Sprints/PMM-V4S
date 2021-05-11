@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pmdm__ServiceDeliveryCompactLayout</fullName>
+    <fields>Name</fields>
+    <fields>pmdm__Contact__c</fields>
+    <fields>pmdm__Account__c</fields>
+    <fields>pmdm__Service__c</fields>
+    <fields>pmdm__ServiceSession__c</fields>
+    <fields>pmdm__Service_Provider__c</fields>
+    <fields>pmdm__DeliveryDate__c</fields>
+    <fields>pmdm__Quantity__c</fields>
+    <label>Service Delivery Compact Layout</label>
+</CompactLayout>
