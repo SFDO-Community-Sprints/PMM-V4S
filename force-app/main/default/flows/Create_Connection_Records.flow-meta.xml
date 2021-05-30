@@ -4,8 +4,8 @@
     <assignments>
         <name>Assign_checkbox_groups_to_variables</name>
         <label>Assign checkbox groups to variables</label>
-        <locationX>163</locationX>
-        <locationY>856</locationY>
+        <locationX>297</locationX>
+        <locationY>811</locationY>
         <assignmentItems>
             <assignToReference>varSelectedVolunteer</assignToReference>
             <operator>Add</operator>
@@ -27,8 +27,8 @@
     <assignments>
         <name>Assign_checkbox_groups_to_variables_0</name>
         <label>Assign checkbox groups to variables</label>
-        <locationX>270</locationX>
-        <locationY>995</locationY>
+        <locationX>295</locationX>
+        <locationY>942</locationY>
         <assignmentItems>
             <assignToReference>varSelectedParticipant</assignToReference>
             <operator>Add</operator>
@@ -43,8 +43,8 @@
     <assignments>
         <name>Assign_checkbox_groups_to_variables_0_0</name>
         <label>Assign checkbox groups to variables</label>
-        <locationX>154</locationX>
-        <locationY>1136</locationY>
+        <locationX>329</locationX>
+        <locationY>1051</locationY>
         <assignmentItems>
             <assignToReference>varSelectedVolunteer</assignToReference>
             <operator>Add</operator>
@@ -59,8 +59,8 @@
     <assignments>
         <name>Assign_Selected_Participants</name>
         <label>Assign Selected Participants</label>
-        <locationX>715</locationX>
-        <locationY>1234</locationY>
+        <locationX>1031</locationX>
+        <locationY>1199</locationY>
         <assignmentItems>
             <assignToReference>Loop_Through_Service_Deliveries.Connection__c</assignToReference>
             <operator>Assign</operator>
@@ -75,8 +75,8 @@
     <assignments>
         <name>Assign_Selected_Volunteers</name>
         <label>Assign Selected Volunteers</label>
-        <locationX>700</locationX>
-        <locationY>905</locationY>
+        <locationX>1010</locationX>
+        <locationY>943</locationY>
         <assignmentItems>
             <assignToReference>Loop_Through_Volunteers.Connection__c</assignToReference>
             <operator>Assign</operator>
@@ -107,8 +107,8 @@
     <assignments>
         <name>Assigning_Date_of_Volunteer_Hours_to_Date_Variable</name>
         <label>Assigning Date of Volunteer Hours to Date Variable</label>
-        <locationX>345</locationX>
-        <locationY>451</locationY>
+        <locationX>421</locationX>
+        <locationY>483</locationY>
         <assignmentItems>
             <assignToReference>DateAssignment</assignToReference>
             <operator>Assign</operator>
@@ -123,8 +123,8 @@
     <assignments>
         <name>Collect_All_Participants</name>
         <label>Collect All Participants</label>
-        <locationX>549</locationX>
-        <locationY>1298</locationY>
+        <locationX>902</locationX>
+        <locationY>1293</locationY>
         <assignmentItems>
             <assignToReference>FinalSelectedParticipants</assignToReference>
             <operator>Add</operator>
@@ -139,8 +139,8 @@
     <assignments>
         <name>Collect_All_Volunteers</name>
         <label>Collect All Volunteers</label>
-        <locationX>542</locationX>
-        <locationY>930</locationY>
+        <locationX>855</locationX>
+        <locationY>995</locationY>
         <assignmentItems>
             <assignToReference>FinalSelectedVolunteers</assignToReference>
             <operator>Add</operator>
@@ -155,8 +155,8 @@
     <decisions>
         <name>Participant_Selected</name>
         <label>Participant Selected</label>
-        <locationX>519</locationX>
-        <locationY>1144</locationY>
+        <locationX>778</locationX>
+        <locationY>1140</locationY>
         <defaultConnector>
             <targetReference>Loop_Through_Service_Deliveries</targetReference>
         </defaultConnector>
@@ -180,8 +180,8 @@
     <decisions>
         <name>Volunteer_Selected</name>
         <label>Volunteer Selected</label>
-        <locationX>561</locationX>
-        <locationY>764</locationY>
+        <locationX>779</locationX>
+        <locationY>770</locationY>
         <defaultConnector>
             <targetReference>Loop_Through_Volunteers</targetReference>
         </defaultConnector>
@@ -376,8 +376,8 @@
     <loops>
         <name>Loop_Through_Service_Deliveries</name>
         <label>Loop Through Service Deliveries</label>
-        <locationX>370</locationX>
-        <locationY>1164</locationY>
+        <locationX>631</locationX>
+        <locationY>1175</locationY>
         <collectionReference>Get_All_Service_Deliveries</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -390,8 +390,8 @@
     <loops>
         <name>Loop_Through_Volunteers</name>
         <label>Loop Through Volunteers</label>
-        <locationX>414</locationX>
-        <locationY>783</locationY>
+        <locationX>647</locationX>
+        <locationY>792</locationY>
         <collectionReference>Get_Volunteer_Hours</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -511,15 +511,15 @@
     <recordUpdates>
         <name>Update_Selected_Participants</name>
         <label>Update Selected Participants</label>
-        <locationX>286</locationX>
-        <locationY>1345</locationY>
+        <locationX>660</locationX>
+        <locationY>1381</locationY>
         <inputReference>FinalSelectedParticipants</inputReference>
     </recordUpdates>
     <recordUpdates>
         <name>Update_Selected_Volunteers_with_Connection</name>
         <label>Update Selected Volunteers with Connection</label>
-        <locationX>407</locationX>
-        <locationY>1001</locationY>
+        <locationX>693</locationX>
+        <locationY>1005</locationY>
         <connector>
             <targetReference>Loop_Through_Service_Deliveries</targetReference>
         </connector>
@@ -736,8 +736,8 @@
     <screens>
         <name>Volunteer_Date_of_Event_0</name>
         <label>Volunteer Hours Date of Event</label>
-        <locationX>621</locationX>
-        <locationY>250</locationY>
+        <locationX>683</locationX>
+        <locationY>324</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
