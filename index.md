@@ -4,7 +4,7 @@ The goal for a hybrid solution is to allow data to live in both products without
 
 
 ### Why do I need a hybrid solution?
-Nonprofits come in all shapes and sizes. For some organizations, they run into a use case where they need the _ability to track detailed program engagements, but also leverage all the cool volunteer search, sign-up functionalities that V4S enables out of the box_ **Please review this value prop**. To take the best of both worlds, a hybrid solution allows organizations be able to track programs at the granularity and manage volunters. 
+Please place some text here around why someone would want to implement a hybrid solution.
 
 ### Hybrid Solution Use Cases
 Here are some examples of hybrid solution use cases:
