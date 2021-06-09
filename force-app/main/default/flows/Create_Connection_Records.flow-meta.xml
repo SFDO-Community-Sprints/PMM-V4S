@@ -4,8 +4,8 @@
     <assignments>
         <name>Assign_checkbox_groups_to_variables</name>
         <label>Assign checkbox groups to variables</label>
-        <locationX>184</locationX>
-        <locationY>869</locationY>
+        <locationX>163</locationX>
+        <locationY>856</locationY>
         <assignmentItems>
             <assignToReference>varSelectedVolunteer</assignToReference>
             <operator>Add</operator>
@@ -18,6 +18,38 @@
             <operator>Add</operator>
             <value>
                 <elementReference>All_Participants</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Through_Volunteers</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_checkbox_groups_to_variables_0</name>
+        <label>Assign checkbox groups to variables</label>
+        <locationX>270</locationX>
+        <locationY>995</locationY>
+        <assignmentItems>
+            <assignToReference>varSelectedParticipant</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>All_Participants</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Through_Volunteers</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_checkbox_groups_to_variables_0_0</name>
+        <label>Assign checkbox groups to variables</label>
+        <locationX>154</locationX>
+        <locationY>1136</locationY>
+        <assignmentItems>
+            <assignToReference>varSelectedVolunteer</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>All_Volunteers</elementReference>
             </value>
         </assignmentItems>
         <connector>
@@ -57,6 +89,38 @@
         </connector>
     </assignments>
     <assignments>
+        <name>Assigning_Date_of_Service_Delivery_to_Date_Variable</name>
+        <label>Assigning Date of Service Delivery to Date Variable</label>
+        <locationX>176</locationX>
+        <locationY>488</locationY>
+        <assignmentItems>
+            <assignToReference>DateAssignment</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Date_of_ServiceDelivery</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Get_All_Service_Deliveries</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assigning_Date_of_Volunteer_Hours_to_Date_Variable</name>
+        <label>Assigning Date of Volunteer Hours to Date Variable</label>
+        <locationX>345</locationX>
+        <locationY>451</locationY>
+        <assignmentItems>
+            <assignToReference>DateAssignment</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Date_of_Volunteer_Hours</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Get_All_Service_Deliveries</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
         <name>Collect_All_Participants</name>
         <label>Collect All Participants</label>
         <locationX>549</locationX>
@@ -75,8 +139,8 @@
     <assignments>
         <name>Collect_All_Volunteers</name>
         <label>Collect All Volunteers</label>
-        <locationX>538</locationX>
-        <locationY>921</locationY>
+        <locationX>542</locationX>
+        <locationY>930</locationY>
         <assignmentItems>
             <assignToReference>FinalSelectedVolunteers</assignToReference>
             <operator>Add</operator>
@@ -141,8 +205,8 @@
     <decisions>
         <name>What_object_is_this_starting_from</name>
         <label>What object is this starting from?</label>
-        <locationX>243</locationX>
-        <locationY>187</locationY>
+        <locationX>307</locationX>
+        <locationY>177</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Service</name>
@@ -160,30 +224,6 @@
             <label>Service</label>
         </rules>
         <rules>
-            <name>Service_Deliveries</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>ObjectName</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Service Delivery</stringValue>
-                </rightValue>
-            </conditions>
-            <label>Service Deliveries</label>
-        </rules>
-        <rules>
-            <name>Volunteer_Hours</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>ObjectName</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Volunteer Hour</stringValue>
-                </rightValue>
-            </conditions>
-            <label>Volunteer Hours</label>
-        </rules>
-        <rules>
             <name>Volunteer_Job</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
@@ -193,7 +233,80 @@
                     <stringValue>Volunteer Job</stringValue>
                 </rightValue>
             </conditions>
+            <connector>
+                <targetReference>Volunteer_Date_of_Event</targetReference>
+            </connector>
             <label>Volunteer Job</label>
+        </rules>
+        <rules>
+            <name>Volunteer_Hours</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ObjectName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Volunteer Hours</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Volunteer_Date_of_Event_0</targetReference>
+            </connector>
+            <label>Volunteer Hours</label>
+        </rules>
+        <rules>
+            <name>Service_Deliveries</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ObjectName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Service Deliveries</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Service_Date_of_Event_0</targetReference>
+            </connector>
+            <label>Service Deliveries</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>What_object_is_this_starting_from_0</name>
+        <label>What object is this starting from?</label>
+        <locationX>39</locationX>
+        <locationY>1010</locationY>
+        <defaultConnector>
+            <targetReference>Assign_checkbox_groups_to_variables</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Volunteer_Hours_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ObjectName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Volunteer Hours</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_checkbox_groups_to_variables_0</targetReference>
+            </connector>
+            <label>Volunteer Hours</label>
+        </rules>
+        <rules>
+            <name>Service_Deliveries1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ObjectName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Service Deliveries</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_checkbox_groups_to_variables_0_0</targetReference>
+            </connector>
+            <label>Service Deliveries</label>
         </rules>
     </decisions>
     <dynamicChoiceSets>
@@ -205,14 +318,14 @@
             <field>pmdm__DeliveryDate__c</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>Date_of_ServiceDelivery</elementReference>
+                <elementReference>DateAssignment</elementReference>
             </value>
         </filters>
         <filters>
             <field>pmdm__Service__c</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>recordID</elementReference>
+                <elementReference>ServiceID</elementReference>
             </value>
         </filters>
         <filters>
@@ -236,14 +349,14 @@
             <field>GW_Volunteers__Start_Date__c</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>Date_of_ServiceDelivery</elementReference>
+                <elementReference>DateAssignment</elementReference>
             </value>
         </filters>
         <filters>
             <field>GW_Volunteers__Volunteer_Job__c</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>VolunteerJobs.recordId</elementReference>
+                <elementReference>VolunteerJobsID</elementReference>
             </value>
         </filters>
         <filters>
@@ -328,8 +441,8 @@
         <description>Get all service deliveries that match date and service</description>
         <name>Get_All_Service_Deliveries</name>
         <label>Get All Service Deliveries</label>
-        <locationX>254</locationX>
-        <locationY>491</locationY>
+        <locationX>286</locationX>
+        <locationY>604</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Get_Volunteer_Hours</targetReference>
@@ -339,14 +452,14 @@
             <field>pmdm__Service__c</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>recordID</elementReference>
+                <elementReference>ServiceID</elementReference>
             </value>
         </filters>
         <filters>
             <field>pmdm__DeliveryDate__c</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>Date_of_ServiceDelivery</elementReference>
+                <elementReference>DateAssignment</elementReference>
             </value>
         </filters>
         <filters>
@@ -363,8 +476,8 @@
     <recordLookups>
         <name>Get_Volunteer_Hours</name>
         <label>Get Volunteer Hours</label>
-        <locationX>248</locationX>
-        <locationY>640</locationY>
+        <locationX>222</locationX>
+        <locationY>694</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Create_Connection</targetReference>
@@ -374,14 +487,14 @@
             <field>GW_Volunteers__Start_Date__c</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>Date_of_ServiceDelivery</elementReference>
+                <elementReference>DateAssignment</elementReference>
             </value>
         </filters>
         <filters>
             <field>GW_Volunteers__Volunteer_Job__c</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>VolunteerJobs.recordId</elementReference>
+                <elementReference>VolunteerJobsID</elementReference>
             </value>
         </filters>
         <filters>
@@ -405,8 +518,8 @@
     <recordUpdates>
         <name>Update_Selected_Volunteers_with_Connection</name>
         <label>Update Selected Volunteers with Connection</label>
-        <locationX>371</locationX>
-        <locationY>1002</locationY>
+        <locationX>407</locationX>
+        <locationY>1001</locationY>
         <connector>
             <targetReference>Loop_Through_Service_Deliveries</targetReference>
         </connector>
@@ -421,7 +534,7 @@
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
         <connector>
-            <targetReference>Assign_checkbox_groups_to_variables</targetReference>
+            <targetReference>What_object_is_this_starting_from_0</targetReference>
         </connector>
         <fields>
             <name>All_Participants</name>
@@ -430,6 +543,16 @@
             <fieldText>All Participants</fieldText>
             <fieldType>MultiSelectCheckboxes</fieldType>
             <isRequired>true</isRequired>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>ObjectName</leftValueReference>
+                    <operator>NotEqualTo</operator>
+                    <rightValue>
+                        <stringValue>Service Deliveries</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
         </fields>
         <fields>
             <name>All_Volunteers</name>
@@ -438,6 +561,16 @@
             <fieldText>All Volunteers</fieldText>
             <fieldType>MultiSelectCheckboxes</fieldType>
             <isRequired>true</isRequired>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>ObjectName</leftValueReference>
+                    <operator>NotEqualTo</operator>
+                    <rightValue>
+                        <stringValue>Volunteer Hours</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
         </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
@@ -445,13 +578,13 @@
     <screens>
         <name>Service_Date_of_Event</name>
         <label>Service Date of Event</label>
-        <locationX>237</locationX>
-        <locationY>328</locationY>
+        <locationX>172</locationX>
+        <locationY>339</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
         <connector>
-            <targetReference>Get_All_Service_Deliveries</targetReference>
+            <targetReference>Assigning_Date_of_Service_Delivery_to_Date_Variable</targetReference>
         </connector>
         <fields>
             <name>Date_of_ServiceDelivery</name>
@@ -489,19 +622,180 @@
                 </value>
             </inputParameters>
             <isRequired>true</isRequired>
-            <storeOutputAutomatically>true</storeOutputAutomatically>
+            <outputParameters>
+                <assignToReference>VolunteerJobsID</assignToReference>
+                <name>recordId</name>
+            </outputParameters>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Service_Date_of_Event_0</name>
+        <label>Service Deliveries Date of Event</label>
+        <locationX>29</locationX>
+        <locationY>320</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Get_All_Service_Deliveries</targetReference>
+        </connector>
+        <fields>
+            <name>VolunteerJobs_0</name>
+            <extensionName>flowruntime:lookup</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>fieldApiName</name>
+                <value>
+                    <stringValue>GW_Volunteers__Volunteer_Job__c</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>Volunteer Job</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>objectApiName</name>
+                <value>
+                    <stringValue>GW_Volunteers__Volunteer_Hours__c</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>required</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </inputParameters>
+            <isRequired>true</isRequired>
+            <outputParameters>
+                <assignToReference>VolunteerJobsID</assignToReference>
+                <name>recordId</name>
+            </outputParameters>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Volunteer_Date_of_Event</name>
+        <label>Volunteer Job Date of Event</label>
+        <locationX>441</locationX>
+        <locationY>322</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Assigning_Date_of_Volunteer_Hours_to_Date_Variable</targetReference>
+        </connector>
+        <fields>
+            <name>Date_of_Volunteer_Hours</name>
+            <dataType>Date</dataType>
+            <fieldText>Select the Date of Volunteer Hours</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>ServiceLookup</name>
+            <extensionName>flowruntime:lookup</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>fieldApiName</name>
+                <value>
+                    <stringValue>pmdm__Service__c</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>Service</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>objectApiName</name>
+                <value>
+                    <stringValue>pmdm__ServiceDelivery__c</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>required</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </inputParameters>
+            <isRequired>true</isRequired>
+            <outputParameters>
+                <assignToReference>ServiceID</assignToReference>
+                <name>recordId</name>
+            </outputParameters>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Volunteer_Date_of_Event_0</name>
+        <label>Volunteer Hours Date of Event</label>
+        <locationX>621</locationX>
+        <locationY>250</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Get_All_Service_Deliveries</targetReference>
+        </connector>
+        <fields>
+            <name>ServiceLookup_0</name>
+            <extensionName>flowruntime:lookup</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>fieldApiName</name>
+                <value>
+                    <stringValue>pmdm__Service__c</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>Service</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>objectApiName</name>
+                <value>
+                    <stringValue>pmdm__ServiceDelivery__c</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>required</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </inputParameters>
+            <isRequired>true</isRequired>
+            <outputParameters>
+                <assignToReference>ServiceID</assignToReference>
+                <name>recordId</name>
+            </outputParameters>
         </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
     </screens>
     <start>
-        <locationX>123</locationX>
-        <locationY>50</locationY>
+        <locationX>187</locationX>
+        <locationY>2</locationY>
         <connector>
             <targetReference>What_object_is_this_starting_from</targetReference>
         </connector>
     </start>
     <status>Active</status>
+    <variables>
+        <name>DateAssignment</name>
+        <dataType>Date</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
     <variables>
         <name>FinalSelectedParticipants</name>
         <dataType>SObject</dataType>
@@ -526,7 +820,7 @@
         <isOutput>false</isOutput>
     </variables>
     <variables>
-        <name>recordID</name>
+        <name>ServiceID</name>
         <dataType>String</dataType>
         <isCollection>false</isCollection>
         <isInput>true</isInput>
@@ -536,14 +830,21 @@
         <name>varSelectedParticipant</name>
         <dataType>String</dataType>
         <isCollection>false</isCollection>
-        <isInput>false</isInput>
+        <isInput>true</isInput>
         <isOutput>false</isOutput>
     </variables>
     <variables>
         <name>varSelectedVolunteer</name>
         <dataType>String</dataType>
         <isCollection>false</isCollection>
-        <isInput>false</isInput>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>VolunteerJobsID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
         <isOutput>false</isOutput>
     </variables>
 </Flow>
