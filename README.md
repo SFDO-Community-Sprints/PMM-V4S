@@ -13,6 +13,36 @@ Help us give you the thanks you deserve and ensure future contributors know who 
 ### List of all Contributors:
 Full Name          | Team Role             | Github Username              | Sprint(s)
 ------------       | -------------         | -------------                | -------------
+Sandra	Prieto     |                       |                              | Virtual- June, 2021
+Deanne	Walters    |                       |                              | Virtual- June, 2021
+
+
+### Past Project Team Members
+
+Full Name          | Team Role             | Github Username              | Sprint(s)
+------------       | -------------         | -------------                | -------------
+Andrew Burnett     |                       |                              | Virtual- April, 2021
+Christopher Karpyszyn|                     |                              | Virtual- April, 2021
+Johnny McInnes     |                       |                              | Virtual- April, 2021
+Meaghan Lynch      |                       |                              | Virtual- April, 2021
+Justin Gilmore     |                       |                              | Virtual- April, 2021
+Arturo Ordoqui     |                       |                              | Virtual- April, 2021
+TJ Warfield        |                       |                              | Virtual- April, 2021
+Melissa Hill Dees  |                       |                              | Virtual- April, 2021
+Shayna Stockton    |                       |                              | Virtual- April, 2021
+Michele McGeoy     |                       |                              | Virtual- April, 2021
+Emily Hicks-Rotella|                       |                              | Virtual- April, 2021
+Kathryn Powell     |                       |                              | Virtual- April, 2021
+Eileen	Kapp       |                       |                              | Virtual- April, 2021
+Ryan Rucker        |                       |                              | Virtual- April, 2021
+Charise Van Liew   |                       |                              | Virtual- April, 2021
+Jessie	Rymph      |                       |                              | Virtual- April, 2021
+John Sim           |                       |                              | Virtual- April, 2021
+Grace Kim          |                       |                              | Virtual- April, 2021
+
+
+Full Name          | Team Role             | Github Username              | Sprint(s)
+------------       | -------------         | -------------                | -------------
 Andy Green         |                       |                              | Virtual- February, 2021
 Deepa	Bedi         |                       |                              | Virtual- February, 2021
 Anne Wiegersman    |                       |                              | Virtual- February, 2021
@@ -23,12 +53,12 @@ Skye Tyler         |                       |                              | Virt
 Arturo Ordoqui     |                       |                              | Virtual- February, 2021
 Sheeba Thukral     |                       |                              | Virtual- February, 2021
 Jeremie	Malengreaux|                       |                              | Virtual- February, 2021
-Adrienne	McCue     |                       |                              | Virtual- February, 2021
+Adrienne	McCue    |                       |                              | Virtual- February, 2021
 Lance	Petersen     |                       |                              | Virtual- February, 2021
-Ryan	Rucker        |                       |                              | Virtual- February, 2021
-Sandra	Prieto      |                       |                              | Virtual- February, 2021
-Deanne	Walters     |                       |                              | Virtual- February, 2021
-### Past Project Team Members
+Ryan	Rucker       |                       |                              | Virtual- February, 2021
+Sandra	Prieto     |                       |                              | Virtual- February, 2021
+Deanne	Walters    |                       |                              | Virtual- February, 2021
+
 Full Name          | Team Role             | Github Username              | Sprint(s)
 ------------       | -------------         | -------------                | -------------
 Shawn	Bass         |                       |                              | Virtual- September, 2020
@@ -44,6 +74,7 @@ Justin Gilmore     |                       |                              | Virt
 Sheila	Powell      |                       |                              | Virtual- September, 2020
 Sandra	Prieto      |                       |                              | Virtual- September, 2020
 Deanne	Walters     |                       |                              | Virtual- September, 2020
+
 ### Project Vision 
 Currently organizations using PMM & V4S have data data living in both products. This solution is aimed at cleanly syncing the data across the two product. 
 Data entry is minimized (eg don’t need to enter everything twice once in PMM, once in V4S) 
