@@ -71,25 +71,32 @@ Meg	Gray           |                       |                              | Virt
 Josh Jensen        |                       |                              | Virtual- September, 2020
 Nandini	Karamala   |                       |                              | Virtual- September, 2020
 Maria	Lawler       |                       |                              | Virtual- September, 2020
-Abby	Morrow        |                       |                              | Virtual- September, 2020
+Abby	Morrow       |                       |                              | Virtual- September, 2020
 Trish	Perkins      |                       |                              | Virtual- September, 2020
 Justin Gilmore     |                       |                              | Virtual- September, 2020
-Sheila	Powell      |                       |                              | Virtual- September, 2020
-Sandra	Prieto      |                       |                              | Virtual- September, 2020
-Deanne	Walters     |                       |                              | Virtual- September, 2020
+Sheila	Powell     |                       |                              | Virtual- September, 2020
+Sandra	Prieto     |                       |                              | Virtual- September, 2020
+Deanne	Walters    |                       |                              | Virtual- September, 2020
 
 ### Project Vision 
 Currently organizations using PMM & V4S have data data living in both products. This solution is aimed at cleanly syncing the data across the two product. 
 Data entry is minimized (eg don’t need to enter everything twice once in PMM, once in V4S) 
 ### Project Team Accomplishments
+
+**April Virtual Mini Sprint 2021**:
+Finalized the creation of Flow with Connections objects to connect Volunteer Hours and Service Delivery (in GitHub and documentation)
+Cleaned up and created documentation Wiki pages for the various items worked on in past sprints.
+
 **February Virtual Sprint 2021**:
-The team created an infographic to highlight when to use PMM vs. V4S. Update previous documentation to include additional information options with the latest release. The group explored various users' stories and created a flow that could assist with a possible connection.
+The team created an infographic to highlight when to use PMM vs. V4S. Update previous documentation to include additional information options with the latest release. The group explored various users' stories and began to work on a flow that could assist with a possible connection.
 
 **September Virtual Sprint 2020**: 
 Draft documentation started detailing various use case ideas. When to use PMM vs V4S, PMM only solutions, and possible hybrid model solution. Comparison chart for PMM and V4S (starting on page 4)
 ### Future Contributions (AKA what were you unable to finish at the Sprint)
+
 **February Virtual Sprint 2021**:
 Further explorer other uses cases and possible connections and explore ways to use current info to finalize a recipe doc.
+
 **September Virtual Sprint 2020**:Possible items to explore include the various connections after new PMM Winter release in addition to how to migrate data from V4S to PMM. Looking at creating a recipe doc similar to (https://powerofus.force.com/s/article/NPSP-Custom-Rllps-Recipes).
 With the PMM winter release we are looking at connecting Service Sessions object with a V4S object.
 ### Project Documentation
