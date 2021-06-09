@@ -15,7 +15,10 @@ Full Name          | Team Role             | Github Username              | Spri
 ------------       | -------------         | -------------                | -------------
 Sandra	Prieto     |                       |                              | Virtual- June, 2021
 Deanne	Walters    |                       |                              | Virtual- June, 2021
-
+Debbie Lee         |                       |                              | Virtual- June, 2021
+Skye Tyler         |                       |                              | Virtual- June, 2021
+Arundathi Gunturu  |                       |                              | Virtual- June, 2021
+CJ Wilkerson       |                       |                              | Virtual- June, 2021
 
 ### Past Project Team Members
 
