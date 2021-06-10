@@ -83,6 +83,9 @@ Currently organizations using PMM & V4S have data data living in both products. 
 Data entry is minimized (eg don’t need to enter everything twice once in PMM, once in V4S) 
 ### Project Team Accomplishments
 
+**June Sprint 2021**:
+Reviewed and updated existing Flow recipe doc. Also found limitations with the current data architecture so are re-looking at our data architecture and rethinking it.Cleaned up the wiki pages, wording and started looking at Github page that we were hoping to use to share the connections. Explored and created new data architecture for the connections for hybrid solution with best reporting options. Documented the ERD and flow started.
+
 **April Virtual Mini Sprint 2021**:
 Finalized the creation of Flow with Connections objects to connect Volunteer Hours and Service Delivery (in GitHub and documentation)
 Cleaned up and created documentation Wiki pages for the various items worked on in past sprints.
@@ -100,6 +103,8 @@ Further explorer other uses cases and possible connections and explore ways to u
 **September Virtual Sprint 2020**:Possible items to explore include the various connections after new PMM Winter release in addition to how to migrate data from V4S to PMM. Looking at creating a recipe doc similar to (https://powerofus.force.com/s/article/NPSP-Custom-Rllps-Recipes).
 With the PMM winter release we are looking at connecting Service Sessions object with a V4S object.
 ### Project Documentation
+Connection Junction Object Version 2.0 - https://docs.google.com/document/d/1YDtT471jWsCwwC346CV0xK7upJM6CBlBJtgKlXmn8hI/edit?usp=sharing
+Connection Junction Object 1.0 - https://docs.google.com/document/d/1c5G0P1isjvAwNd7PWoZ997b3OgLK1XzeAppNjjk5H6c/edit?usp=sharing
 Jamboard - https://jamboard.google.com/d/1T0g_fahg2ES7MhyFRHArDstwbVtzvuu6ziW2IG0XnDM/edit?usp=sharing
 Google Doc - https://docs.google.com/document/d/1osMFz2RIHEzABUDrk8wVOor2JmxjmYHudgAobXJZe-8/edit?usp=sharing
 Flow for Hybrid Volunteer Hours - https://drive.google.com/file/d/1HkG1JDPxbHj2PJ8hmgad_vNAFfRxRdIl/view?usp=sharing
