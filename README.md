@@ -94,8 +94,16 @@ Cleaned up and created documentation Wiki pages for the various items worked on 
 The team created an infographic to highlight when to use PMM vs. V4S. Update previous documentation to include additional information options with the latest release. The group explored various users' stories and began to work on a flow that could assist with a possible connection.
 
 **September Virtual Sprint 2020**: 
-Draft documentation started detailing various use case ideas. When to use PMM vs V4S, PMM only solutions, and possible hybrid model solution. Comparison chart for PMM and V4S (starting on page 4)
+Draft documentation started detailing various use case ideas. When to use PMM vs V4S, PMM only solutions, and possible hybrid model solution. Comparison chart for 
+PMM and V4S (starting on page 4)
+
 ### Future Contributions (AKA what were you unable to finish at the Sprint)
+
+**June Virtual Sprint 2021**:
+Continue documentation and exploring flow started. 
+
+**April Virtual Mini Sprint 2021**:
+Complete the flow that was started and create documentation.
 
 **February Virtual Sprint 2021**:
 Further explorer other uses cases and possible connections and explore ways to use current info to finalize a recipe doc.
