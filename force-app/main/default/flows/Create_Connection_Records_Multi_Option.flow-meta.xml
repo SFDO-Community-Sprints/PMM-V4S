@@ -2,10 +2,26 @@
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>50.0</apiVersion>
     <assignments>
+        <name>Add_to_Connection_Collection</name>
+        <label>Add to Connection Collection</label>
+        <locationX>1239</locationX>
+        <locationY>1749</locationY>
+        <assignmentItems>
+            <assignToReference>ConnectionCollection</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>varConnection</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Volunteers</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
         <name>Assign_checkbox_groups_to_variables</name>
         <label>Assign checkbox groups to variables</label>
-        <locationX>157</locationX>
-        <locationY>838</locationY>
+        <locationX>404</locationX>
+        <locationY>1024</locationY>
         <assignmentItems>
             <assignToReference>varSelectedVolunteer</assignToReference>
             <operator>Add</operator>
@@ -21,14 +37,14 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Loop_Through_Volunteers</targetReference>
+            <targetReference>All_Match_or_Manual_Match</targetReference>
         </connector>
     </assignments>
     <assignments>
         <name>Assign_checkbox_groups_to_variables_0</name>
         <label>Assign checkbox groups to variables</label>
-        <locationX>270</locationX>
-        <locationY>995</locationY>
+        <locationX>148</locationX>
+        <locationY>1202</locationY>
         <assignmentItems>
             <assignToReference>varSelectedParticipant</assignToReference>
             <operator>Add</operator>
@@ -36,15 +52,12 @@
                 <elementReference>All_Participants</elementReference>
             </value>
         </assignmentItems>
-        <connector>
-            <targetReference>Loop_Through_Volunteers</targetReference>
-        </connector>
     </assignments>
     <assignments>
         <name>Assign_checkbox_groups_to_variables_0_0</name>
         <label>Assign checkbox groups to variables</label>
-        <locationX>154</locationX>
-        <locationY>1136</locationY>
+        <locationX>50</locationX>
+        <locationY>1206</locationY>
         <assignmentItems>
             <assignToReference>varSelectedVolunteer</assignToReference>
             <operator>Add</operator>
@@ -52,47 +65,42 @@
                 <elementReference>All_Volunteers</elementReference>
             </value>
         </assignmentItems>
-        <connector>
-            <targetReference>Loop_Through_Volunteers</targetReference>
-        </connector>
     </assignments>
     <assignments>
-        <name>Assign_Selected_Participants</name>
-        <label>Assign Selected Participants</label>
-        <locationX>715</locationX>
-        <locationY>1234</locationY>
+        <name>Assign_to_Variable</name>
+        <label>Assign to Variable</label>
+        <locationX>1424</locationX>
+        <locationY>1639</locationY>
         <assignmentItems>
-            <assignToReference>Loop_Through_Service_Deliveries.Connection__c</assignToReference>
+            <assignToReference>varConnection.Service_Delivery__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>Create_Connection</elementReference>
+                <elementReference>Loop_Participants.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varConnection.Volunteer_Hours__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop_Volunteers.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varConnection.Parent_Connection__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Create_Parent_Connection</elementReference>
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Collect_All_Participants</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>Assign_Selected_Volunteers</name>
-        <label>Assign Selected Volunteers</label>
-        <locationX>700</locationX>
-        <locationY>905</locationY>
-        <assignmentItems>
-            <assignToReference>Loop_Through_Volunteers.Connection__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>Create_Connection</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Collect_All_Volunteers</targetReference>
+            <targetReference>Add_to_Connection_Collection</targetReference>
         </connector>
     </assignments>
     <assignments>
         <name>Assigning_Date_of_Service_Delivery_to_Date_Variable</name>
         <label>Assigning Date of Service Delivery to Date Variable</label>
-        <locationX>176</locationX>
-        <locationY>488</locationY>
+        <locationX>418</locationX>
+        <locationY>665</locationY>
         <assignmentItems>
             <assignToReference>DateAssignment</assignToReference>
             <operator>Assign</operator>
@@ -107,8 +115,8 @@
     <assignments>
         <name>Assigning_Date_of_Volunteer_Hours_to_Date_Variable</name>
         <label>Assigning Date of Volunteer Hours to Date Variable</label>
-        <locationX>345</locationX>
-        <locationY>451</locationY>
+        <locationX>587</locationX>
+        <locationY>628</locationY>
         <assignmentItems>
             <assignToReference>DateAssignment</assignToReference>
             <operator>Assign</operator>
@@ -123,42 +131,229 @@
     <assignments>
         <name>Collect_All_Participants</name>
         <label>Collect All Participants</label>
-        <locationX>549</locationX>
-        <locationY>1298</locationY>
+        <locationX>1570</locationX>
+        <locationY>1027</locationY>
         <assignmentItems>
-            <assignToReference>FinalSelectedParticipants</assignToReference>
+            <assignToReference>SelectedParticipantsCollection</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference>Loop_Through_Service_Deliveries</elementReference>
+                <elementReference>Service_Deliveries_for_Record_Choice_Set</elementReference>
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Loop_Through_Service_Deliveries</targetReference>
+            <targetReference>Service_Deliveries_for_Record_Choice_Set</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Collect_All_Participants_0</name>
+        <label>Collect All Participants</label>
+        <locationX>1680</locationX>
+        <locationY>1360</locationY>
+        <assignmentItems>
+            <assignToReference>SelectedParticipantsCollection</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Service_Deliveries_for_Loop</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Service_Deliveries_for_Loop</targetReference>
         </connector>
     </assignments>
     <assignments>
         <name>Collect_All_Volunteers</name>
         <label>Collect All Volunteers</label>
-        <locationX>542</locationX>
-        <locationY>930</locationY>
+        <locationX>924</locationX>
+        <locationY>1037</locationY>
         <assignmentItems>
-            <assignToReference>FinalSelectedVolunteers</assignToReference>
+            <assignToReference>SelectedVolunteersCollection</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference>Loop_Through_Volunteers</elementReference>
+                <elementReference>Volunteers_for_Record_Choice_Set</elementReference>
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Loop_Through_Volunteers</targetReference>
+            <targetReference>Volunteers_for_Record_Choice_Set</targetReference>
         </connector>
     </assignments>
+    <assignments>
+        <name>Collect_All_Volunteers_0</name>
+        <label>Collect All Volunteers</label>
+        <locationX>941</locationX>
+        <locationY>1345</locationY>
+        <assignmentItems>
+            <assignToReference>SelectedVolunteersCollection</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Volunteer_for_Loop</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Volunteer_for_Loop</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Connections_Flow_Selections</name>
+        <label>Connections Flow Selections</label>
+        <locationX>1072</locationX>
+        <locationY>972</locationY>
+        <assignmentItems>
+            <assignToReference>Volunteers_for_Record_Choice_Set.Connections_Flow_Selections__c</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Collect_All_Volunteers</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Connections_Flow_Selections_0</name>
+        <label>Connections Flow Selections</label>
+        <locationX>1726</locationX>
+        <locationY>970</locationY>
+        <assignmentItems>
+            <assignToReference>Service_Deliveries_for_Record_Choice_Set.Connections_Flow_Selections__c</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Collect_All_Participants</targetReference>
+        </connector>
+    </assignments>
+    <choices>
+        <name>ManualStartingParticipant</name>
+        <choiceText>Manually match participants to volunteers</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Manually match participants to volunteers</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>ManualStartingVolunteer</name>
+        <choiceText>Manually match volunteers to participants</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Manually match volunteers to participants</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>MatchAll</name>
+        <choiceText>Match all participants to all volunteers</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Match all participants to all volunteers</stringValue>
+        </value>
+    </choices>
+    <decisions>
+        <name>All_Match_or_Manual_Match</name>
+        <label>All Match or Manual Match</label>
+        <locationX>457</locationX>
+        <locationY>1245</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>All_Match</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>What_kind_of_connections_do_you_want_to_make</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>MatchAll</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Volunteer_for_Loop</targetReference>
+            </connector>
+            <label>All Match</label>
+        </rules>
+        <rules>
+            <name>Manual_Match_Starting_Participant</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>What_kind_of_connections_do_you_want_to_make</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>ManualStartingParticipant</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Volunteers_for_Record_Choice_Set</targetReference>
+            </connector>
+            <label>Manual Match Starting Participant</label>
+        </rules>
+        <rules>
+            <name>Manual_Match_Starting_Volunteer</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>What_kind_of_connections_do_you_want_to_make</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>ManualStartingVolunteer</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Service_Deliveries_for_Record_Choice_Set</targetReference>
+            </connector>
+            <label>Manual Match Starting Volunteer</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>All_Match_or_Manual_Match_0</name>
+        <label>All Match or Manual Match</label>
+        <locationX>651</locationX>
+        <locationY>1480</locationY>
+        <defaultConnector>
+            <targetReference>Starting_with_Volunteers</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>All_Match_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>What_kind_of_connections_do_you_want_to_make</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>MatchAll</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Service_Deliveries_for_Loop</targetReference>
+            </connector>
+            <label>All Match</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>All_Match_or_Manual_Match_0_0</name>
+        <label>All Match or Manual Match</label>
+        <locationX>1329</locationX>
+        <locationY>1395</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>All_Match_0_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>What_kind_of_connections_do_you_want_to_make</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>MatchAll</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Loop_Participants</targetReference>
+            </connector>
+            <label>All Match</label>
+        </rules>
+    </decisions>
     <decisions>
         <name>Participant_Selected</name>
         <label>Participant Selected</label>
-        <locationX>519</locationX>
-        <locationY>1144</locationY>
+        <locationX>1563</locationX>
+        <locationY>848</locationY>
         <defaultConnector>
-            <targetReference>Loop_Through_Service_Deliveries</targetReference>
+            <targetReference>Service_Deliveries_for_Record_Choice_Set</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -168,11 +363,36 @@
                 <leftValueReference>varSelectedParticipant</leftValueReference>
                 <operator>Contains</operator>
                 <rightValue>
-                    <elementReference>Loop_Through_Service_Deliveries.Id</elementReference>
+                    <elementReference>Service_Deliveries_for_Record_Choice_Set.Id</elementReference>
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Assign_Selected_Participants</targetReference>
+                <targetReference>Connections_Flow_Selections_0</targetReference>
+            </connector>
+            <label>Participant ID was Selected</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Participant_Selected_0</name>
+        <label>Participant Selected</label>
+        <locationX>1673</locationX>
+        <locationY>1181</locationY>
+        <defaultConnector>
+            <targetReference>Service_Deliveries_for_Loop</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Participant_ID_was_Selected_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varSelectedParticipant</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <elementReference>Service_Deliveries_for_Loop.Id</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Collect_All_Participants_0</targetReference>
             </connector>
             <label>Participant ID was Selected</label>
         </rules>
@@ -180,10 +400,10 @@
     <decisions>
         <name>Volunteer_Selected</name>
         <label>Volunteer Selected</label>
-        <locationX>561</locationX>
-        <locationY>763</locationY>
+        <locationX>914</locationX>
+        <locationY>875</locationY>
         <defaultConnector>
-            <targetReference>Loop_Through_Volunteers</targetReference>
+            <targetReference>Volunteers_for_Record_Choice_Set</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -193,11 +413,36 @@
                 <leftValueReference>varSelectedVolunteer</leftValueReference>
                 <operator>Contains</operator>
                 <rightValue>
-                    <elementReference>Loop_Through_Volunteers.Id</elementReference>
+                    <elementReference>Volunteers_for_Record_Choice_Set.Id</elementReference>
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Assign_Selected_Volunteers</targetReference>
+                <targetReference>Connections_Flow_Selections</targetReference>
+            </connector>
+            <label>Volunteer Selected in MSP</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Volunteer_Selected_0</name>
+        <label>Volunteer Selected</label>
+        <locationX>931</locationX>
+        <locationY>1183</locationY>
+        <defaultConnector>
+            <targetReference>Volunteer_for_Loop</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Volunteer_Selected_in_MSP_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varSelectedVolunteer</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <elementReference>Volunteer_for_Loop.Id</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Collect_All_Volunteers_0</targetReference>
             </connector>
             <label>Volunteer Selected in MSP</label>
         </rules>
@@ -205,8 +450,8 @@
     <decisions>
         <name>What_object_is_this_starting_from</name>
         <label>What object is this starting from?</label>
-        <locationX>307</locationX>
-        <locationY>177</locationY>
+        <locationX>549</locationX>
+        <locationY>354</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Service</name>
@@ -272,8 +517,8 @@
     <decisions>
         <name>What_object_is_this_starting_from_0</name>
         <label>What object is this starting from?</label>
-        <locationX>39</locationX>
-        <locationY>1010</locationY>
+        <locationX>281</locationX>
+        <locationY>1187</locationY>
         <defaultConnector>
             <targetReference>Assign_checkbox_groups_to_variables</targetReference>
         </defaultConnector>
@@ -309,6 +554,22 @@
             <label>Service Deliveries</label>
         </rules>
     </decisions>
+    <description>Populates lookup fields on the connections record</description>
+    <dynamicChoiceSets>
+        <name>SelectedServiceDeliveriesChoices</name>
+        <dataType>String</dataType>
+        <displayField>Name</displayField>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Connections_Flow_Selections__c</field>
+            <operator>Contains</operator>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </filters>
+        <object>pmdm__ServiceDelivery__c</object>
+        <valueField>Id</valueField>
+    </dynamicChoiceSets>
     <dynamicChoiceSets>
         <name>ServiceDeliveriesChoiceSet</name>
         <dataType>String</dataType>
@@ -326,13 +587,6 @@
             <operator>EqualTo</operator>
             <value>
                 <elementReference>ServiceID</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>Connection__c</field>
-            <operator>IsNull</operator>
-            <value>
-                <booleanValue>true</booleanValue>
             </value>
         </filters>
         <object>pmdm__ServiceDelivery__c</object>
@@ -359,25 +613,61 @@
                 <elementReference>VolunteerJobsID</elementReference>
             </value>
         </filters>
-        <filters>
-            <field>Connection__c</field>
-            <operator>IsNull</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
         <object>GW_Volunteers__Volunteer_Hours__c</object>
         <sortField>Name</sortField>
         <sortOrder>Asc</sortOrder>
         <valueField>Id</valueField>
     </dynamicChoiceSets>
-    <interviewLabel>Create Connetion Records {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>Create Connection Records - Legacy</label>
+    <interviewLabel>Create Connection Records - Multi-Option {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Create Connection Records - Multi-Option</label>
     <loops>
-        <name>Loop_Through_Service_Deliveries</name>
-        <label>Loop Through Service Deliveries</label>
-        <locationX>370</locationX>
-        <locationY>1164</locationY>
+        <name>Loop_Participants</name>
+        <label>Loop Participants</label>
+        <locationX>1031</locationX>
+        <locationY>1581</locationY>
+        <collectionReference>SelectedParticipantsCollection</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Loop_Volunteers</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Create_Child_Connections</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Loop_Volunteers</name>
+        <label>Loop Volunteers</label>
+        <locationX>1241</locationX>
+        <locationY>1614</locationY>
+        <collectionReference>SelectedVolunteersCollection</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Assign_to_Variable</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Loop_Participants</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <description>This would be used either if you are matching all or starting from the participants. No record updates are need because this will not be used in a record choice set.</description>
+        <name>Service_Deliveries_for_Loop</name>
+        <label>Service Deliveries for Loop</label>
+        <locationX>1500</locationX>
+        <locationY>1254</locationY>
+        <collectionReference>Get_All_Service_Deliveries</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Participant_Selected_0</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>All_Match_or_Manual_Match_0_0</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Service_Deliveries_for_Record_Choice_Set</name>
+        <label>Service Deliveries for Record Choice Set</label>
+        <locationX>1390</locationX>
+        <locationY>921</locationY>
         <collectionReference>Get_All_Service_Deliveries</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -388,17 +678,43 @@
         </noMoreValuesConnector>
     </loops>
     <loops>
-        <name>Loop_Through_Volunteers</name>
-        <label>Loop Through Volunteers</label>
-        <locationX>358</locationX>
-        <locationY>814</locationY>
+        <name>Starting_with_Volunteers</name>
+        <label>Starting with Volunteers</label>
+        <locationX>498</locationX>
+        <locationY>1606</locationY>
+        <collectionReference>SelectedVolunteersCollection</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Match_Volunteer_with_Participants</targetReference>
+        </nextValueConnector>
+    </loops>
+    <loops>
+        <description>This would be used either if you are matching all or starting from the volunteers. No record updates are need because this will not be used in a record choice set.</description>
+        <name>Volunteer_for_Loop</name>
+        <label>Volunteer for Loop</label>
+        <locationX>617</locationX>
+        <locationY>1299</locationY>
+        <collectionReference>Get_Volunteer_Hours</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Volunteer_Selected_0</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>All_Match_or_Manual_Match_0</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Volunteers_for_Record_Choice_Set</name>
+        <label>Volunteers for Record Choice Set</label>
+        <locationX>600</locationX>
+        <locationY>991</locationY>
         <collectionReference>Get_Volunteer_Hours</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
             <targetReference>Volunteer_Selected</targetReference>
         </nextValueConnector>
         <noMoreValuesConnector>
-            <targetReference>Update_Selected_Volunteers_with_Connection</targetReference>
+            <targetReference>Update_Selected_Volunteers</targetReference>
         </noMoreValuesConnector>
     </loops>
     <processMetadataValues>
@@ -421,12 +737,19 @@
     </processMetadataValues>
     <processType>Flow</processType>
     <recordCreates>
-        <name>Create_Connection</name>
-        <label>Create Connection</label>
-        <locationX>86</locationX>
-        <locationY>738</locationY>
+        <name>Create_Child_Connections</name>
+        <label>Create Child Connections</label>
+        <locationX>1040</locationX>
+        <locationY>1841</locationY>
+        <inputReference>ConnectionCollection</inputReference>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_Parent_Connection</name>
+        <label>Create Parent Connection</label>
+        <locationX>496</locationX>
+        <locationY>194</locationY>
         <connector>
-            <targetReference>Matching_Participants_and_Volunteers</targetReference>
+            <targetReference>What_object_is_this_starting_from</targetReference>
         </connector>
         <inputAssignments>
             <field>OwnerId</field>
@@ -441,8 +764,8 @@
         <description>Get all service deliveries that match date and service</description>
         <name>Get_All_Service_Deliveries</name>
         <label>Get All Service Deliveries</label>
-        <locationX>286</locationX>
-        <locationY>604</locationY>
+        <locationX>528</locationX>
+        <locationY>781</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Get_Volunteer_Hours</targetReference>
@@ -462,13 +785,6 @@
                 <elementReference>DateAssignment</elementReference>
             </value>
         </filters>
-        <filters>
-            <field>Connection__c</field>
-            <operator>IsNull</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
         <object>pmdm__ServiceDelivery__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
@@ -476,11 +792,11 @@
     <recordLookups>
         <name>Get_Volunteer_Hours</name>
         <label>Get Volunteer Hours</label>
-        <locationX>222</locationX>
-        <locationY>694</locationY>
+        <locationX>431</locationX>
+        <locationY>844</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Create_Connection</targetReference>
+            <targetReference>Matching_Participants_and_Volunteers</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -497,13 +813,6 @@
                 <elementReference>VolunteerJobsID</elementReference>
             </value>
         </filters>
-        <filters>
-            <field>Connection__c</field>
-            <operator>IsNull</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
         <object>GW_Volunteers__Volunteer_Hours__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
@@ -511,25 +820,52 @@
     <recordUpdates>
         <name>Update_Selected_Participants</name>
         <label>Update Selected Participants</label>
-        <locationX>286</locationX>
-        <locationY>1345</locationY>
-        <inputReference>FinalSelectedParticipants</inputReference>
+        <locationX>1299</locationX>
+        <locationY>1045</locationY>
+        <connector>
+            <targetReference>Volunteer_for_Loop</targetReference>
+        </connector>
+        <inputReference>SelectedParticipantsCollection</inputReference>
     </recordUpdates>
     <recordUpdates>
-        <name>Update_Selected_Volunteers_with_Connection</name>
-        <label>Update Selected Volunteers with Connection</label>
-        <locationX>407</locationX>
-        <locationY>1001</locationY>
+        <name>Update_Selected_Volunteers</name>
+        <label>Update Selected Volunteers</label>
+        <locationX>694</locationX>
+        <locationY>1068</locationY>
         <connector>
-            <targetReference>Loop_Through_Service_Deliveries</targetReference>
+            <targetReference>Service_Deliveries_for_Loop</targetReference>
         </connector>
-        <inputReference>FinalSelectedVolunteers</inputReference>
+        <inputReference>SelectedVolunteersCollection</inputReference>
     </recordUpdates>
+    <screens>
+        <name>Match_Volunteer_with_Participants</name>
+        <label>Match Volunteer with Participants</label>
+        <locationX>657</locationX>
+        <locationY>1626</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>VolunteerInformation</name>
+            <fieldText>&lt;p&gt;{!Starting_with_Volunteers.GW_Volunteers__Full_Name__c}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Match_to_Participants</name>
+            <choiceReferences>SelectedServiceDeliveriesChoices</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Match to Participants</fieldText>
+            <fieldType>MultiSelectCheckboxes</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
     <screens>
         <name>Matching_Participants_and_Volunteers</name>
         <label>Matching Participants and Volunteers</label>
-        <locationX>50</locationX>
-        <locationY>871</locationY>
+        <locationX>289</locationX>
+        <locationY>916</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -572,14 +908,24 @@
                 </conditions>
             </visibilityRule>
         </fields>
+        <fields>
+            <name>What_kind_of_connections_do_you_want_to_make</name>
+            <choiceReferences>MatchAll</choiceReferences>
+            <choiceReferences>ManualStartingParticipant</choiceReferences>
+            <choiceReferences>ManualStartingVolunteer</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>What kind of connections do you want to make?</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
     </screens>
     <screens>
         <name>Service_Date_of_Event</name>
         <label>Service Date of Event</label>
-        <locationX>172</locationX>
-        <locationY>339</locationY>
+        <locationX>414</locationX>
+        <locationY>516</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -633,8 +979,8 @@
     <screens>
         <name>Service_Date_of_Event_0</name>
         <label>Service Deliveries Date of Event</label>
-        <locationX>29</locationX>
-        <locationY>320</locationY>
+        <locationX>271</locationX>
+        <locationY>497</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -681,8 +1027,8 @@
     <screens>
         <name>Volunteer_Date_of_Event</name>
         <label>Volunteer Job Date of Event</label>
-        <locationX>441</locationX>
-        <locationY>322</locationY>
+        <locationX>683</locationX>
+        <locationY>499</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -736,8 +1082,8 @@
     <screens>
         <name>Volunteer_Date_of_Event_0</name>
         <label>Volunteer Hours Date of Event</label>
-        <locationX>621</locationX>
-        <locationY>250</locationY>
+        <locationX>863</locationX>
+        <locationY>427</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -787,35 +1133,27 @@
         <showHeader>true</showHeader>
     </screens>
     <start>
-        <locationX>187</locationX>
-        <locationY>2</locationY>
+        <locationX>325</locationX>
+        <locationY>50</locationY>
         <connector>
-            <targetReference>What_object_is_this_starting_from</targetReference>
+            <targetReference>Create_Parent_Connection</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
+    <variables>
+        <name>ConnectionCollection</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Connection__c</objectType>
+    </variables>
     <variables>
         <name>DateAssignment</name>
         <dataType>Date</dataType>
         <isCollection>false</isCollection>
         <isInput>true</isInput>
         <isOutput>false</isOutput>
-    </variables>
-    <variables>
-        <name>FinalSelectedParticipants</name>
-        <dataType>SObject</dataType>
-        <isCollection>true</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <objectType>pmdm__ServiceDelivery__c</objectType>
-    </variables>
-    <variables>
-        <name>FinalSelectedVolunteers</name>
-        <dataType>SObject</dataType>
-        <isCollection>true</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <objectType>GW_Volunteers__Volunteer_Hours__c</objectType>
     </variables>
     <variables>
         <name>ObjectName</name>
@@ -825,11 +1163,35 @@
         <isOutput>false</isOutput>
     </variables>
     <variables>
+        <name>SelectedParticipantsCollection</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>pmdm__ServiceDelivery__c</objectType>
+    </variables>
+    <variables>
+        <name>SelectedVolunteersCollection</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>GW_Volunteers__Volunteer_Hours__c</objectType>
+    </variables>
+    <variables>
         <name>ServiceID</name>
         <dataType>String</dataType>
         <isCollection>false</isCollection>
         <isInput>true</isInput>
         <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>varConnection</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Connection__c</objectType>
     </variables>
     <variables>
         <name>varSelectedParticipant</name>
