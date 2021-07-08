@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GW_Volunteers__VolunteersReportHoursFS</fullName>
+    <availableFields>
+        <field>GW_Volunteers__Number_of_Volunteers__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>GW_Volunteers__Planned_Start_Date_Time__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <description>used in the VolunteerReportHours page - include fields such as comments</description>
+    <displayedFields>
+        <field>GW_Volunteers__Comments__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>VolunteersReportHoursFS</label>
+</FieldSet>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GW_Volunteers__Volunteer_Shift__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Volunteer Shift</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>GW_Volunteers__Volunteer_Shift__c.GW_Volunteers__Volunteer_Job__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.GW_Volunteers__Volunteer_Job__c</valueField>
+        </filterItems>
+        <infoMessage>You can only pick a Shift that is associated with the current Job.</infoMessage>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>GW_Volunteers__Volunteer_Shift__c</referenceTo>
+    <relationshipLabel>Volunteer Hours</relationshipLabel>
+    <relationshipName>Volunteer_Hours</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

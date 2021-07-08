@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pmdm__START_DATE_WITHIN_PROGRAM_DATES</fullName>
+    <active>true</active>
+    <description>The Program Engagement Start Date must fall within the Program Start and End Dates when specified.</description>
+    <errorConditionFormula>OR( 
+ AND(
+  NOT(ISBLANK(pmdm__StartDate__c)),
+  NOT(ISBLANK(pmdm__Program__r.pmdm__StartDate__c)),
+  pmdm__StartDate__c &lt; pmdm__Program__r.pmdm__StartDate__c
+ ),
+ AND(
+  NOT(ISBLANK(pmdm__StartDate__c)),
+  NOT(ISBLANK(pmdm__Program__r.pmdm__EndDate__c)),
+  pmdm__StartDate__c &gt; pmdm__Program__r.pmdm__EndDate__c
+ )
+)</errorConditionFormula>
+    <errorMessage>Select a start date that&apos;s on or after the program start date and on or before the program end date.</errorMessage>
+</ValidationRule>
