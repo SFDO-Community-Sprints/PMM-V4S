@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GW_Volunteers__External_Signup_Url__c</fullName>
+    <deprecated>false</deprecated>
+    <description>If provided, the VolunteersJobListingFS page will redirect to this website when the user clicks on the Sign Up link on the page.  This allows you to advertise jobs that one must register for on another web site.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The external registration site, if any, for this Job. If you include an External Signup URL, V4S redirects to the site from the Sign Up link on the Job Listing FS page.</inlineHelpText>
+    <label>External Signup Url</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

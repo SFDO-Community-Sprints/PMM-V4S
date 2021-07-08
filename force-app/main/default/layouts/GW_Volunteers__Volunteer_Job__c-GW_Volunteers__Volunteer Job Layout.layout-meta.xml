@@ -152,14 +152,24 @@
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
-            <actionName>GW_Volunteers__Job_Shift_Calendar</actionName>
-            <actionType>CustomButton</actionType>
-            <sortOrder>24</sortOrder>
+            <actionName>LogACall</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>6</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>GW_Volunteers__Mass_Email_Volunteers</actionName>
-            <actionType>CustomButton</actionType>
-            <sortOrder>25</sortOrder>
+            <actionName>NewOpportunity</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>7</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>NewCase</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>8</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>NewLead</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>9</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
             <actionName>Connect_Service_Del_to_Vol_Hours</actionName>
@@ -190,26 +200,6 @@
             <actionName>NewContact</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>5</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>LogACall</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>6</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>NewOpportunity</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>7</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>NewCase</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>8</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>NewLead</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>9</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
             <actionName>FeedItem.RypplePost</actionName>
@@ -281,6 +271,16 @@
             <actionType>CustomButton</actionType>
             <sortOrder>23</sortOrder>
         </platformActionListItems>
+        <platformActionListItems>
+            <actionName>GW_Volunteers__Job_Shift_Calendar</actionName>
+            <actionType>CustomButton</actionType>
+            <sortOrder>24</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>GW_Volunteers__Mass_Email_Volunteers</actionName>
+            <actionType>CustomButton</actionType>
+            <sortOrder>25</sortOrder>
+        </platformActionListItems>
     </platformActionList>
     <relatedLists>
         <fields>NAME</fields>
@@ -322,6 +322,7 @@
         <fields>GW_Volunteers__Hours_Worked__c</fields>
         <fields>GW_Volunteers__Start_Date__c</fields>
         <fields>GW_Volunteers__End_Date__c</fields>
+        <fields>NAME</fields>
         <relatedList>GW_Volunteers__Volunteer_Hours__c.GW_Volunteers__Volunteer_Job__c</relatedList>
         <sortField>GW_Volunteers__Shift_Start_Date_Time__c</sortField>
         <sortOrder>Asc</sortOrder>
@@ -354,7 +355,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h11000003gOc3</masterLabel>
+        <masterLabel>00hJ0000004A7Jw</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

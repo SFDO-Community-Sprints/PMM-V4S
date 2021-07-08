@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pmdm__END_DATE_PROGRAM_DATES</fullName>
+    <active>true</active>
+    <description>Ensures End Date is within the Program Start and End Dates</description>
+    <errorConditionFormula>OR(
+pmdm__EndDate__c &lt; pmdm__Program__r.pmdm__StartDate__c,
+pmdm__EndDate__c &gt; pmdm__Program__r.pmdm__EndDate__c
+)</errorConditionFormula>
+    <errorMessage>End Date must be within the Program Start and End Dates</errorMessage>
+</ValidationRule>

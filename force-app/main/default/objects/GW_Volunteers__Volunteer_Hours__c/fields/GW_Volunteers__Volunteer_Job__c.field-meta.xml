@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GW_Volunteers__Volunteer_Job__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Volunteer Job</label>
+    <referenceTo>GW_Volunteers__Volunteer_Job__c</referenceTo>
+    <relationshipLabel>Volunteer Hours</relationshipLabel>
+    <relationshipName>Volunteer_Hours</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>true</writeRequiresMasterRead>
+</CustomField>

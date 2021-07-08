@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GW_Volunteers__Job_Recurrence_Schedule__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Automatically set by the system scheduler to show the Job Recurrence Schedule this Shift is associated with.</inlineHelpText>
+    <label>Job Recurrence Schedule</label>
+    <referenceTo>GW_Volunteers__Job_Recurrence_Schedule__c</referenceTo>
+    <relationshipLabel>Volunteer Shifts</relationshipLabel>
+    <relationshipName>Volunteer_Shifts</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

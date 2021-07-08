@@ -16,5 +16,5 @@
     <protected>false</protected>
     <showsLocation>false</showsLocation>
     <showsStatus>false</showsStatus>
-    <url>/flow/Create_Connection_Records?ObjectName=Volunteer Hours&amp;VolunteerJobsID={!GW_Volunteers__Volunteer_Hours__c.GW_Volunteers__Volunteer_JobId__c}&amp;varSelectedVolunteer={!GW_Volunteers__Volunteer_Hours__c.Id}&amp;DateAssignment={!GW_Volunteers__Volunteer_Hours__c.GW_Volunteers__Start_Date__c}&amp;retURL={!GW_Volunteers__Volunteer_Hours__c.Id}</url>
+    <url>/flow/Create_Connection_Records?ObjectName=Volunteer Hours&amp;VolunteerJobsID={!GW_Volunteers__Volunteer_Hours__c.GW_Volunteers__Volunteer_JobId__c}&amp;varSelectedVolunteer={!CASESAFEID(GW_Volunteers__Volunteer_Hours__c.Id)}&amp;DateAssignment={!TEXT(GW_Volunteers__Volunteer_Hours__c.GW_Volunteers__Start_Date__c)}&amp;retURL={!GW_Volunteers__Volunteer_Hours__c.Id}</url>
 </WebLink>

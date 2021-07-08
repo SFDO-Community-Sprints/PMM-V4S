@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GW_Volunteers__VRS_Weekly_Occurrence_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISNULL(GW_Volunteers__Weekly_Occurrence__c)</errorConditionFormula>
+    <errorDisplayField>GW_Volunteers__Weekly_Occurrence__c</errorDisplayField>
+    <errorMessage>You must select at least one value for Weekly Occurence.</errorMessage>
+</ValidationRule>

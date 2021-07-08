@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pmdm__Stage__c</fullName>
+    <deprecated>false</deprecated>
+    <description>A Contact&apos;s stage in a Program Engagement. Picklist values are determined by your Admin. Don&apos;t delete or modify the API Name of the Active And Enrolled picklist values as they are referenced in PMM reports.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>These Picklist values describe a Contact&apos;s stage of engagement in a Program and are displayed in a Path. Values are determined by your Admin.</inlineHelpText>
+    <label>Stage</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Applied</fullName>
+                <default>false</default>
+                <label>Applied</label>
+            </value>
+            <value>
+                <fullName>Application Denied</fullName>
+                <default>false</default>
+                <label>Application Denied</label>
+            </value>
+            <value>
+                <fullName>Waitlisted</fullName>
+                <default>false</default>
+                <label>Waitlisted</label>
+            </value>
+            <value>
+                <fullName>Enrolled</fullName>
+                <default>false</default>
+                <label>Enrolled</label>
+            </value>
+            <value>
+                <fullName>Active</fullName>
+                <default>false</default>
+                <label>Active</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>Withdrawn</fullName>
+                <default>false</default>
+                <label>Withdrawn</label>
+            </value>
+            <value>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>In Progress</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
