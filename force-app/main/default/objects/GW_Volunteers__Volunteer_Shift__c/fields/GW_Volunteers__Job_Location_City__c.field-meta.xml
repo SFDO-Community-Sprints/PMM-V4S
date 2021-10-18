@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GW_Volunteers__Job_Location_City__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>GW_Volunteers__Volunteer_Job__r.GW_Volunteers__Location_City__c</formula>
+    <label>Job Location City</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

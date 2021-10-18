@@ -16,5 +16,5 @@
     <protected>false</protected>
     <showsLocation>false</showsLocation>
     <showsStatus>false</showsStatus>
-    <url>/flow/Create_Connection_Records?ObjectName=Service Deliveries&amp;ServiceID={!pmdm__ServiceDelivery__c.pmdm__ServiceId__c}&amp;varSelectedParticipant={!pmdm__ServiceDelivery__c.Id}&amp;DateAssignment={!pmdm__ServiceDelivery__c.pmdm__DeliveryDate__c}&amp;retURL={!pmdm__ServiceDelivery__c.Id}</url>
+    <url>/flow/Create_Connection_Records?ObjectName=Service Deliveries&amp;ServiceID={!pmdm__ServiceDelivery__c.pmdm__ServiceId__c}&amp;varSelectedParticipant={!CASESAFEID(pmdm__ServiceDelivery__c.Id)}&amp;DateAssignment={!TEXT(pmdm__ServiceDelivery__c.pmdm__DeliveryDate__c)}&amp;retURL={!pmdm__ServiceDelivery__c.Id}</url>
 </WebLink>

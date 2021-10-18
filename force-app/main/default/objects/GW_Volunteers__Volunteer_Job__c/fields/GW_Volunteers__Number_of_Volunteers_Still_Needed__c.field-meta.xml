@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GW_Volunteers__Number_of_Volunteers_Still_Needed__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label># of Volunteers Still Needed</label>
+    <summarizedField>GW_Volunteers__Volunteer_Shift__c.GW_Volunteers__Number_of_Volunteers_Still_Needed__c</summarizedField>
+    <summaryForeignKey>GW_Volunteers__Volunteer_Shift__c.GW_Volunteers__Volunteer_Job__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

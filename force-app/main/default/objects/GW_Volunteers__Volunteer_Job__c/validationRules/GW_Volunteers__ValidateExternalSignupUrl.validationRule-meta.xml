@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GW_Volunteers__ValidateExternalSignupUrl</fullName>
+    <active>true</active>
+    <description>Validates that the External Signup URL field begins with an expected URI Scheme.</description>
+    <errorConditionFormula>NOT(OR(ISBLANK(GW_Volunteers__External_Signup_Url__c), REGEX(GW_Volunteers__External_Signup_Url__c,&quot;^(http|https|mailto).*&quot;)))</errorConditionFormula>
+    <errorDisplayField>GW_Volunteers__External_Signup_Url__c</errorDisplayField>
+    <errorMessage>The External Signup Url value must begin with http, https, or mailto.</errorMessage>
+</ValidationRule>
