@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pmdm__ServiceScheduleCompactLayout</fullName>
+    <fields>Name</fields>
+    <fields>pmdm__Service__c</fields>
+    <fields>pmdm__PrimaryServiceProvider__c</fields>
+    <fields>pmdm__OtherServiceProvider__c</fields>
+    <fields>pmdm__ParticipantCapacity__c</fields>
+    <fields>pmdm__Frequency__c</fields>
+    <label>Service Schedule Compact Layout</label>
+</CompactLayout>

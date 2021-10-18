@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GW_Volunteers__Mass_Email_Volunteers</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Mass Email Volunteers</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>/apex/{!$Setup.GW_Volunteers__PackageSettings__c.GW_Volunteers__NamespacePrefix__c}SendBulkEmail?jobId={!GW_Volunteers__Volunteer_Job__c.Id}</url>
+</WebLink>

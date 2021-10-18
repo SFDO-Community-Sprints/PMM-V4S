@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GW_Volunteers__StatusMustBeSet</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(GW_Volunteers__Status__c,&quot;&quot; )</errorConditionFormula>
+    <errorDisplayField>GW_Volunteers__Status__c</errorDisplayField>
+    <errorMessage>You must specify a Status value.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GW_Volunteers__Mass_Edit_Volunteer_Hours</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Mass Edit Volunteer Hours</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+    <url>/apex/{!$Setup.GW_Volunteers__PackageSettings__c.GW_Volunteers__NamespacePrefix__c}VolunteersBulkEnterHours?campaignId={!GW_Volunteers__Volunteer_Job__c.GW_Volunteers__CampaignId__c}&amp;volunteerJobId={!GW_Volunteers__Volunteer_Job__c.Id}&amp;volunteerShiftId={!GW_Volunteers__Volunteer_Shift__c.Id}&amp;retURL={!
+
+IF(ISNULL( GW_Volunteers__Volunteer_Job__c.Id), 
+    URLFOR($Action.Contact.View, Contact.Id), 
+    IF(ISNULL(GW_Volunteers__Volunteer_Shift__c.Id), 
+        URLFOR( $Action.GW_Volunteers__Volunteer_Job__c.View , GW_Volunteers__Volunteer_Job__c.Id ), 
+        URLFOR( $Action.GW_Volunteers__Volunteer_Shift__c.View , GW_Volunteers__Volunteer_Shift__c.Id )) 
+)}</url>
+</WebLink>

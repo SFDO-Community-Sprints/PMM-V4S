@@ -4,8 +4,8 @@
     <assignments>
         <name>Assign_checkbox_groups_to_variables</name>
         <label>Assign checkbox groups to variables</label>
-        <locationX>163</locationX>
-        <locationY>856</locationY>
+        <locationX>157</locationX>
+        <locationY>838</locationY>
         <assignmentItems>
             <assignToReference>varSelectedVolunteer</assignToReference>
             <operator>Add</operator>
@@ -181,7 +181,7 @@
         <name>Volunteer_Selected</name>
         <label>Volunteer Selected</label>
         <locationX>561</locationX>
-        <locationY>764</locationY>
+        <locationY>763</locationY>
         <defaultConnector>
             <targetReference>Loop_Through_Volunteers</targetReference>
         </defaultConnector>
@@ -372,7 +372,7 @@
         <valueField>Id</valueField>
     </dynamicChoiceSets>
     <interviewLabel>Create Connetion Records {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>Create Connection Records</label>
+    <label>Create Connection Records - Legacy</label>
     <loops>
         <name>Loop_Through_Service_Deliveries</name>
         <label>Loop Through Service Deliveries</label>
@@ -390,8 +390,8 @@
     <loops>
         <name>Loop_Through_Volunteers</name>
         <label>Loop Through Volunteers</label>
-        <locationX>414</locationX>
-        <locationY>783</locationY>
+        <locationX>358</locationX>
+        <locationY>814</locationY>
         <collectionReference>Get_Volunteer_Hours</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -777,6 +777,11 @@
                 <assignToReference>ServiceID</assignToReference>
                 <name>recordId</name>
             </outputParameters>
+        </fields>
+        <fields>
+            <name>Test</name>
+            <fieldText>&lt;p&gt;{!varSelectedVolunteer}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
         </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>

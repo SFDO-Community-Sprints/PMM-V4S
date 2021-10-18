@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GW_Volunteers__HoursRequiredOnCompletion</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL(GW_Volunteers__Status__c, &apos;Completed&apos;) , ISNULL( GW_Volunteers__Hours_Worked__c ))</errorConditionFormula>
+    <errorDisplayField>GW_Volunteers__Hours_Worked__c</errorDisplayField>
+    <errorMessage>You must specify the Hours Worked when setting Status to Completed.</errorMessage>
+</ValidationRule>
