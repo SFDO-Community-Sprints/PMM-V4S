@@ -8,9 +8,22 @@ This project is intended for admins in non-profit organizations currently using 
 https://powerofus.force.com/s/group/0F91E000000LmUJSA0
 ### Current Project Team
 Help us give you the thanks you deserve and ensure future contributors know who to contact if they have questions! Please ensure that all contributing members of the team are included.
-* Team Leader(s): Deanne Walters & Sandra Prieto
-* GitHub Scribe(s): Sandra Prieto 
+* Team Leader(s): Deanne Walters
+* GitHub Scribe(s): Deanne Walters
+
+
 ### List of all Contributors:
+Full Name          | Team Role             | Github Username              | Sprint(s)
+------------       | -------------         | -------------                | -------------
+Deanne	Walters    |                       |                              | Virtual- October, 2021
+Lynda En           |                       |                              | Virtual- October, 2021
+Nick Klein         |                       |                              | Virtual- October, 2021
+Junette Tan        |                       |                              | Virtual- October, 2021
+Albane Le Provost  |                       |                              | Virtual- October, 2021
+Durdana Tazrian    |                       |                              | Virtual- October, 2021
+
+### Past Project Team Members
+
 Full Name          | Team Role             | Github Username              | Sprint(s)
 ------------       | -------------         | -------------                | -------------
 Sandra	Prieto     |                       |                              | Virtual- June, 2021
@@ -19,8 +32,6 @@ Debbie Lee         |                       |                              | Virt
 Skye Tyler         |                       |                              | Virtual- June, 2021
 Arundathi Gunturu  |                       |                              | Virtual- June, 2021
 CJ Wilkerson       |                       |                              | Virtual- June, 2021
-
-### Past Project Team Members
 
 Full Name          | Team Role             | Github Username              | Sprint(s)
 ------------       | -------------         | -------------                | -------------
@@ -83,6 +94,9 @@ Currently organizations using PMM & V4S have data data living in both products. 
 Data entry is minimized (eg don’t need to enter everything twice once in PMM, once in V4S) 
 ### Project Team Accomplishments
 
+**October Sprint 2021**:
+Talked about the vision for the team. It was summed up by how do we explain about the different volunteer management options with PMM; it could include V4S or it could not. Then talk about different volunter management options and started to draft up what they would look like.
+
 **June Sprint 2021**:
 Reviewed and updated existing Flow recipe doc. Also found limitations with the current data architecture so are re-looking at our data architecture and rethinking it.Cleaned up the wiki pages, wording and started looking at Github page that we were hoping to use to share the connections. Explored and created new data architecture for the connections for hybrid solution with best reporting options. Documented the ERD and flow started.
 
@@ -98,6 +112,9 @@ Draft documentation started detailing various use case ideas. When to use PMM vs
 PMM and V4S (starting on page 4)
 
 ### Future Contributions (AKA what were you unable to finish at the Sprint)
+
+**October Virtual Sprint 2021**:
+Get access to Metecho back! Flesh out documentation and structure of different PMM and volunteer management options. Decide how to publish the documentation.
 
 **June Virtual Sprint 2021**:
 Continue documentation and exploring flow started. 
@@ -122,6 +139,8 @@ PMM + V4S: 1 Client to Many Volunteer User Story Google Doc: https://docs.google
 PMM + V4S: Flow with junction object for Many to Many relationship: https://docs.google.com/document/d/1c5G0P1isjvAwNd7PWoZ997b3OgLK1XzeAppNjjk5H6c/edit
 
 PMM v. V4S Infographic : https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:d0a8dec8-485f-4b0e-ae41-7e12239abf04
+
+October 2021 Sprint Visions and Measures plus looking into different PMM and volunteer management options: https://docs.google.com/document/d/1z6M4PdzDb0eOY58Q2rO3Dy1JqamXKaqPgkNRZiCZk1M/edit
 
 **Important**: If you have specific asks to help move this project forward we would recommend that you list them here, but also create separate Issues for each and add the label of "help wanted". This is a well-worn best practice for projects living in GitHub.
 
