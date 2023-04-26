@@ -1,5 +1,8 @@
 ### PMM-V4S
 A Community Sprint project group to draft a recipe doc to connect Program Management Module (PMM) and Volunteers for Salesforce (V4S) open source products!
+### Final Product
+The final product that this team created was a blog post about <a href="https://medium.com/@databasedeanne/3-ways-to-track-volunteers-using-salesforce-for-nonprofit-products-1d4ddfe709d6">3 different ways to track volunteers in Salesforce using PMM or V4S</a>. Check it out <a href="https://medium.com/@databasedeanne/3-ways-to-track-volunteers-using-salesforce-for-nonprofit-products-1d4ddfe709d6">here</a>!
+
 ### Project Theme
 The goal of this project is to create documentation defining use cases that apply to PMM vs. V4S and hybrid option. Documentation includes chart and screenshots of Flow Builder  process connecting PMM & V4S.
 ### Project Vertical
